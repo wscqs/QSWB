@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2C4AC8F81CF81A9000E8038B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AC8F71CF81A9000E8038B /* AppDelegate.swift */; };
-		2C4AC8FA1CF81A9000E8038B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AC8F91CF81A9000E8038B /* ViewController.swift */; };
-		2C4AC8FD1CF81A9000E8038B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4AC8FB1CF81A9000E8038B /* Main.storyboard */; };
 		2C4AC8FF1CF81A9000E8038B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4AC8FE1CF81A9000E8038B /* Assets.xcassets */; };
-		2C4AC9021CF81A9000E8038B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4AC9001CF81A9000E8038B /* LaunchScreen.storyboard */; };
 		2C4AC90D1CF81A9000E8038B /* QSWBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AC90C1CF81A9000E8038B /* QSWBTests.swift */; };
 		2C4AC9181CF81A9000E8038B /* QSWBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AC9171CF81A9000E8038B /* QSWBUITests.swift */; };
+		47D9B8681CF89C40002959DE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B8671CF89C40002959DE /* MainViewController.swift */; };
+		47D9B86A1CF89C7E002959DE /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B8691CF89C7E002959DE /* HomeTableViewController.swift */; };
+		47D9B86C1CF89C94002959DE /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B86B1CF89C94002959DE /* DiscoverTableViewController.swift */; };
+		47D9B86E1CF89C9E002959DE /* CommonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B86D1CF89C9E002959DE /* CommonTableViewController.swift */; };
+		47D9B8701CF89CA9002959DE /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B86F1CF89CA9002959DE /* MessageTableViewController.swift */; };
+		47D9B8721CF89CB2002959DE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B8711CF89CB2002959DE /* ProfileTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +39,7 @@
 /* Begin PBXFileReference section */
 		2C4AC8F41CF81A9000E8038B /* QSWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QSWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4AC8F71CF81A9000E8038B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C4AC8F91CF81A9000E8038B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C4AC8FC1CF81A9000E8038B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C4AC8FE1CF81A9000E8038B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2C4AC9011CF81A9000E8038B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C4AC9031CF81A9000E8038B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C4AC9081CF81A9000E8038B /* QSWBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSWBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4AC90C1CF81A9000E8038B /* QSWBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSWBTests.swift; sourceTree = "<group>"; };
@@ -47,6 +47,12 @@
 		2C4AC9131CF81A9000E8038B /* QSWBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSWBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4AC9171CF81A9000E8038B /* QSWBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSWBUITests.swift; sourceTree = "<group>"; };
 		2C4AC9191CF81A9000E8038B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D9B8671CF89C40002959DE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		47D9B8691CF89C7E002959DE /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		47D9B86B1CF89C94002959DE /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		47D9B86D1CF89C9E002959DE /* CommonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableViewController.swift; sourceTree = "<group>"; };
+		47D9B86F1CF89CA9002959DE /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		47D9B8711CF89CB2002959DE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				2C4AC8F71CF81A9000E8038B /* AppDelegate.swift */,
-				2C4AC8F91CF81A9000E8038B /* ViewController.swift */,
-				2C4AC8FB1CF81A9000E8038B /* Main.storyboard */,
+				47D9B8601CF89C01002959DE /* Classes */,
 				2C4AC8FE1CF81A9000E8038B /* Assets.xcassets */,
-				2C4AC9001CF81A9000E8038B /* LaunchScreen.storyboard */,
 				2C4AC9031CF81A9000E8038B /* Info.plist */,
 			);
 			path = QSWB;
@@ -123,6 +127,75 @@
 				2C4AC9191CF81A9000E8038B /* Info.plist */,
 			);
 			path = QSWBUITests;
+			sourceTree = "<group>";
+		};
+		47D9B8601CF89C01002959DE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				47D9B8731CF89CD9002959DE /* Tools */,
+				47D9B8611CF89C01002959DE /* Common */,
+				47D9B8621CF89C01002959DE /* Discover */,
+				47D9B8631CF89C01002959DE /* Home */,
+				47D9B8641CF89C01002959DE /* Main */,
+				47D9B8651CF89C01002959DE /* Message */,
+				47D9B8661CF89C01002959DE /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		47D9B8611CF89C01002959DE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				47D9B86D1CF89C9E002959DE /* CommonTableViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		47D9B8621CF89C01002959DE /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				47D9B86B1CF89C94002959DE /* DiscoverTableViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		47D9B8631CF89C01002959DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				47D9B8691CF89C7E002959DE /* HomeTableViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		47D9B8641CF89C01002959DE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				47D9B8671CF89C40002959DE /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		47D9B8651CF89C01002959DE /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				47D9B86F1CF89CA9002959DE /* MessageTableViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		47D9B8661CF89C01002959DE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				47D9B8711CF89CB2002959DE /* ProfileTableViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		47D9B8731CF89CD9002959DE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C4AC9021CF81A9000E8038B /* LaunchScreen.storyboard in Resources */,
 				2C4AC8FF1CF81A9000E8038B /* Assets.xcassets in Resources */,
-				2C4AC8FD1CF81A9000E8038B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +327,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C4AC8FA1CF81A9000E8038B /* ViewController.swift in Sources */,
+				47D9B86A1CF89C7E002959DE /* HomeTableViewController.swift in Sources */,
+				47D9B8681CF89C40002959DE /* MainViewController.swift in Sources */,
+				47D9B86C1CF89C94002959DE /* DiscoverTableViewController.swift in Sources */,
+				47D9B86E1CF89C9E002959DE /* CommonTableViewController.swift in Sources */,
 				2C4AC8F81CF81A9000E8038B /* AppDelegate.swift in Sources */,
+				47D9B8721CF89CB2002959DE /* ProfileTableViewController.swift in Sources */,
+				47D9B8701CF89CA9002959DE /* MessageTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,25 +367,6 @@
 			targetProxy = 2C4AC9141CF81A9000E8038B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2C4AC8FB1CF81A9000E8038B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C4AC8FC1CF81A9000E8038B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2C4AC9001CF81A9000E8038B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C4AC9011CF81A9000E8038B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2C4AC91A1CF81A9000E8038B /* Debug */ = {
@@ -401,10 +458,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = QSWB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbalib.QSWB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -412,10 +471,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = QSWB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbalib.QSWB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -484,6 +545,7 @@
 				2C4AC91E1CF81A9000E8038B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C4AC91F1CF81A9000E8038B /* Build configuration list for PBXNativeTarget "QSWBTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +554,7 @@
 				2C4AC9211CF81A9000E8038B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C4AC9221CF81A9000E8038B /* Build configuration list for PBXNativeTarget "QSWBUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +563,7 @@
 				2C4AC9241CF81A9000E8038B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
