@@ -1,0 +1,15 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'QSWB' do
+#Networking
+pod 'Alamofire'
+pod 'RealmSwift'
+pod 'ObjectMapper'
+
+#AutoLayout
+pod 'SnapKit'
+
+#Image
+pod 'Kingfisher'
+end
