@@ -9,9 +9,37 @@
 import UIKit
 import SnapKit
 
+protocol VisitorViewDelegate: NSObjectProtocol {
+    func registerBtnWillClick()
+    func loginBtnWillClick()
+}
 
 class VisitorView: UIView {
+    
+    weak var delegate: VisitorViewDelegate?
 
+    func setupVisitorInfo(isHome: Bool, imageName: String, message: String) {
+        
+            iconView.hidden = !isHome
+            homeIcon.image = UIImage(named: imageName)
+            messageLabel.text = message
+        
+        if isHome{
+            startAnimation()
+        }
+    }
+    
+    func startAnimation() {
+        let anim = CABasicAnimation(keyPath: "transform.rotation")
+        anim.toValue = 2 * M_PI
+        anim.duration = 20
+        anim.repeatCount = MAXFLOAT
+        
+        //让动画不要移除
+        anim.removedOnCompletion = false
+        iconView.layer.addAnimation(anim, forKey: nil)
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -55,7 +83,16 @@ class VisitorView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - Action
+    func loginBtnClick() {
+//        print(#function)
+        delegate?.loginBtnWillClick()
+    }
     
+    func registerBtnClick() {
+//        print(#function)
+        delegate?.registerBtnWillClick()
+    }
     
     // MARK: - 懒加载控件
     /// 转盘
@@ -83,7 +120,7 @@ class VisitorView: UIView {
         btn.setTitle("登录", forState: UIControlState.Normal)
         btn.setBackgroundImage(UIImage(named: "common_button_white_disable"), forState: UIControlState.Normal)
         
-        btn.addTarget(self, action: "loginBtnClick", forControlEvents: UIControlEvents.TouchUpInside)
+        btn.addTarget(self, action: #selector(VisitorView.loginBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         return btn
     }()
     /// 注册按钮
@@ -93,7 +130,7 @@ class VisitorView: UIView {
         btn.setTitle("注册", forState: UIControlState.Normal)
         btn.setBackgroundImage(UIImage(named: "common_button_white_disable"), forState: UIControlState.Normal)
         
-        btn.addTarget(self, action: "registerBtnClick", forControlEvents: UIControlEvents.TouchUpInside)
+        btn.addTarget(self, action: #selector(VisitorView.registerBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         return btn
     }()
     
