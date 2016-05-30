@@ -39,7 +39,18 @@ class HomeTableViewController: BaseTableViewController {
     }
     
     func titleBtnClick(btn: TitleButton) {
+        // 1.切换导航标题的图标
         btn.selected = !btn.selected
+        
+        // 2.实现popView
+        let sb = UIStoryboard(name: "PopoverViewController", bundle: nil)
+        let vc = sb.instantiateInitialViewController()
+        
+        //设置modal转场,为了能显示底部视图
+        vc?.transitioningDelegate = self
+        vc?.modalPresentationStyle = UIModalPresentationStyle.Custom
+        presentViewController(vc!, animated: true, completion: nil)
+        
     }
     
     func leftItemClick()
@@ -53,4 +64,11 @@ class HomeTableViewController: BaseTableViewController {
     }
 
 
+}
+
+
+extension HomeTableViewController: UIViewControllerTransitioningDelegate{
+     func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController?{
+        return PopoverPresentationController(presentedViewController: presented, presentingViewController: presenting)
+    }
 }

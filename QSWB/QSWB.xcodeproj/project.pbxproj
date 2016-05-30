@@ -14,6 +14,9 @@
 		2C4AC9181CF81A9000E8038B /* QSWBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AC9171CF81A9000E8038B /* QSWBUITests.swift */; };
 		47305FF61CFB165E008E26CB /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47305FF51CFB165E008E26CB /* UIBarButtonItem+Category.swift */; };
 		47305FF81CFB1EDE008E26CB /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47305FF71CFB1EDE008E26CB /* TitleButton.swift */; };
+		4764240C1CFB3DE500F1D4A6 /* PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4764240B1CFB3DE500F1D4A6 /* PopoverViewController.storyboard */; };
+		4764240E1CFB3FF900F1D4A6 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4764240D1CFB3FF900F1D4A6 /* PopoverViewController.swift */; };
+		476424101CFB459000F1D4A6 /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4764240F1CFB459000F1D4A6 /* PopoverPresentationController.swift */; };
 		47D9B8681CF89C40002959DE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B8671CF89C40002959DE /* MainViewController.swift */; };
 		47D9B86A1CF89C7E002959DE /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B8691CF89C7E002959DE /* HomeTableViewController.swift */; };
 		47D9B86C1CF89C94002959DE /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B86B1CF89C94002959DE /* DiscoverTableViewController.swift */; };
@@ -58,6 +61,9 @@
 		2C4AC9191CF81A9000E8038B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47305FF51CFB165E008E26CB /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
 		47305FF71CFB1EDE008E26CB /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		4764240B1CFB3DE500F1D4A6 /* PopoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopoverViewController.storyboard; sourceTree = "<group>"; };
+		4764240D1CFB3FF900F1D4A6 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		4764240F1CFB459000F1D4A6 /* PopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPresentationController.swift; sourceTree = "<group>"; };
 		47D9B8671CF89C40002959DE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		47D9B8691CF89C7E002959DE /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		47D9B86B1CF89C94002959DE /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +155,16 @@
 			path = QSWBUITests;
 			sourceTree = "<group>";
 		};
+		476424111CFB486700F1D4A6 /* popover */ = {
+			isa = PBXGroup;
+			children = (
+				4764240B1CFB3DE500F1D4A6 /* PopoverViewController.storyboard */,
+				4764240F1CFB459000F1D4A6 /* PopoverPresentationController.swift */,
+				4764240D1CFB3FF900F1D4A6 /* PopoverViewController.swift */,
+			);
+			name = popover;
+			sourceTree = "<group>";
+		};
 		47D9B8601CF89C01002959DE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +199,7 @@
 		47D9B8631CF89C01002959DE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				476424111CFB486700F1D4A6 /* popover */,
 				47D9B8691CF89C7E002959DE /* HomeTableViewController.swift */,
 			);
 			path = Home;
@@ -357,6 +374,7 @@
 			files = (
 				47D9B8831CFA8548002959DE /* Podfile in Resources */,
 				47D9B87C1CF9F291002959DE /* MainVCSettings.json in Resources */,
+				4764240C1CFB3DE500F1D4A6 /* PopoverViewController.storyboard in Resources */,
 				2C4AC8FF1CF81A9000E8038B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,10 +448,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				476424101CFB459000F1D4A6 /* PopoverPresentationController.swift in Sources */,
 				47D9B87F1CFA8155002959DE /* BaseTableViewController.swift in Sources */,
 				47D9B86A1CF89C7E002959DE /* HomeTableViewController.swift in Sources */,
 				47D9B8681CF89C40002959DE /* MainViewController.swift in Sources */,
 				47D9B86C1CF89C94002959DE /* DiscoverTableViewController.swift in Sources */,
+				4764240E1CFB3FF900F1D4A6 /* PopoverViewController.swift in Sources */,
 				47305FF81CFB1EDE008E26CB /* TitleButton.swift in Sources */,
 				2C4AC8F81CF81A9000E8038B /* AppDelegate.swift in Sources */,
 				47D9B87D1CF9F291002959DE /* NullViewController.swift in Sources */,
@@ -568,6 +588,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = QSWB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbalib.QSWB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -582,6 +603,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = QSWB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbalib.QSWB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
