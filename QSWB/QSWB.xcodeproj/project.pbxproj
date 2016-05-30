@@ -255,12 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C4AC91C1CF81A9000E8038B /* Build configuration list for PBXNativeTarget "QSWB" */;
 			buildPhases = (
-				C9CE7ECF8FCD2ABD634A8BDB /* Check Pods Manifest.lock */,
+				C9CE7ECF8FCD2ABD634A8BDB /* 📦 Check Pods Manifest.lock */,
 				2C4AC8F01CF81A9000E8038B /* Sources */,
 				2C4AC8F11CF81A9000E8038B /* Frameworks */,
 				2C4AC8F21CF81A9000E8038B /* Resources */,
-				70E975CB45F83E32CD757827 /* Embed Pods Frameworks */,
-				5EB792B4C2221783AF9A4047 /* Copy Pods Resources */,
+				70E975CB45F83E32CD757827 /* 📦 Embed Pods Frameworks */,
+				5EB792B4C2221783AF9A4047 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -378,14 +378,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5EB792B4C2221783AF9A4047 /* Copy Pods Resources */ = {
+		5EB792B4C2221783AF9A4047 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,14 +393,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QSWB/Pods-QSWB-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		70E975CB45F83E32CD757827 /* Embed Pods Frameworks */ = {
+		70E975CB45F83E32CD757827 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,14 +408,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QSWB/Pods-QSWB-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C9CE7ECF8FCD2ABD634A8BDB /* Check Pods Manifest.lock */ = {
+		C9CE7ECF8FCD2ABD634A8BDB /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,6 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = QSWB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbalib.QSWB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -582,6 +583,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = QSWB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mbalib.QSWB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
