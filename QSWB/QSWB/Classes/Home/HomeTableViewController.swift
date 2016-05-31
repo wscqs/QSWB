@@ -60,7 +60,9 @@ class HomeTableViewController: BaseTableViewController {
     
     func rightItemClick()
     {
-        print(#function)
+        let sb = UIStoryboard(name: "QRCodeViewController", bundle: nil)
+        let vc = sb.instantiateInitialViewController()!
+        presentViewController(vc, animated: true, completion: nil)
     }
 
     // 一定要定义一个属性来报错自定义转场对象, 否则会报错
