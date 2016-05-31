@@ -10,6 +10,9 @@ import UIKit
 
 class PopoverPresentationController: UIPresentationController {
 
+    /// 定义属性保存菜单的大小
+    var presentFrame = CGRectZero
+    
     /**
      初始化
      - parameter presentedViewController:  被展示的控制器
@@ -25,8 +28,16 @@ class PopoverPresentationController: UIPresentationController {
     override func containerViewWillLayoutSubviews() {
         //containerView容器view
         //presentedView()显示view
-        presentedView()?.frame = CGRect(x: 100, y: 56, width: 200, height: 200)
+        // 1.修改弹出视图的大小
+        if presentFrame == CGRectZero{
+            
+            presentedView()?.frame = CGRect(x: 100, y: 56, width: 200, height: 200)
+        }else
+        {
+            presentedView()?.frame = presentFrame
+        }
         
+        // 2.在容器视图上添加一个蒙版, 插入到展现视图的下面
         containerView?.insertSubview(coverView, atIndex: 0)
     }
     
