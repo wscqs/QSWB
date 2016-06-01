@@ -38,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="551" width="600" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem title="二维码" image="qrcode_tabbar_icon_qrcode" id="qcB-Ep-oCf"/>
+                                    <tabBarItem tag="1" title="二维码" image="qrcode_tabbar_icon_qrcode" id="qcB-Ep-oCf"/>
                                     <tabBarItem title="条形码" image="qrcode_tabbar_icon_barcode" id="x7r-z0-aqo"/>
                                 </items>
                                 <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -86,7 +86,10 @@
                         <barButtonItem key="rightBarButtonItem" title="相册" id="SMc-UG-aYh"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="containerHeightCons" destination="zvK-Tr-sBJ" id="sR3-Rh-BAi"/>
                         <outlet property="customTabBar" destination="BsA-pb-Q9T" id="Lp4-5a-4go"/>
+                        <outlet property="scanLineCons" destination="tOt-f7-BAQ" id="Zvd-fd-xD6"/>
+                        <outlet property="scanLineView" destination="07C-BJ-ZtA" id="VWk-or-JnI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ug-oa-Hzw" userLabel="First Responder" sceneMemberID="firstResponder"/>
