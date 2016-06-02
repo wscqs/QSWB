@@ -36,8 +36,12 @@ class BaseTableViewController: UITableViewController, VisitorViewDelegate {
     //MARK: visitorViewDelegate
     func registerBtnWillClick() {
         print(#function)
+        print(UserAccount.loadAccount())
     }
     func loginBtnWillClick() {
         print(#function)
+        let oauthVC = OAuthViewController()
+        let nav = UINavigationController(rootViewController: oauthVC)
+        presentViewController(nav, animated: true, completion: nil)
     }
 }

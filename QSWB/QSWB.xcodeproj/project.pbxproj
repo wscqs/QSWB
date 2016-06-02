@@ -26,6 +26,9 @@
 		2C08A7EE1D000A230029C94C /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7D81D000A230029C94C /* VisitorView.swift */; };
 		2C08A7EF1D000A230029C94C /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7DA1D000A230029C94C /* MessageTableViewController.swift */; };
 		2C08A7F01D000A230029C94C /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7DD1D000A230029C94C /* ProfileTableViewController.swift */; };
+		2C08A7F21D000AC50029C94C /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7F11D000AC50029C94C /* OAuthViewController.swift */; };
+		2C08A7F41D0013650029C94C /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7F31D0013650029C94C /* NetworkTools.swift */; };
+		2C08A7F61D0021640029C94C /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7F51D0021640029C94C /* UserAccount.swift */; };
 		2C4AC8F81CF81A9000E8038B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AC8F71CF81A9000E8038B /* AppDelegate.swift */; };
 		2C4AC8FF1CF81A9000E8038B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4AC8FE1CF81A9000E8038B /* Assets.xcassets */; };
 		2C4AC90D1CF81A9000E8038B /* QSWBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AC90C1CF81A9000E8038B /* QSWBTests.swift */; };
@@ -71,6 +74,9 @@
 		2C08A7D81D000A230029C94C /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		2C08A7DA1D000A230029C94C /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		2C08A7DD1D000A230029C94C /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		2C08A7F11D000AC50029C94C /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		2C08A7F31D0013650029C94C /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		2C08A7F51D0021640029C94C /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		2C4AC8F41CF81A9000E8038B /* QSWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QSWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4AC8F71CF81A9000E8038B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C4AC8FE1CF81A9000E8038B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,9 +168,9 @@
 		2C08A7D21D000A230029C94C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2C08A7D51D000A230029C94C /* Resource */,
 				2C08A7D31D000A230029C94C /* BaseTableViewController.swift */,
 				2C08A7D41D000A230029C94C /* MainViewController.swift */,
-				2C08A7D51D000A230029C94C /* Resource */,
 				2C08A7D81D000A230029C94C /* VisitorView.swift */,
 			);
 			path = Main;
@@ -190,6 +196,8 @@
 		2C08A7DB1D000A230029C94C /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
+				2C08A7F11D000AC50029C94C /* OAuthViewController.swift */,
+				2C08A7F51D0021640029C94C /* UserAccount.swift */,
 			);
 			path = OAuth;
 			sourceTree = "<group>";
@@ -205,6 +213,7 @@
 		2C08A7DE1D000A230029C94C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2C08A7F31D0013650029C94C /* NetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -480,7 +489,9 @@
 				2C08A7E61D000A230029C94C /* PopoverViewController.swift in Sources */,
 				2C08A7DF1D000A230029C94C /* TitleButton.swift in Sources */,
 				2C4AC8F81CF81A9000E8038B /* AppDelegate.swift in Sources */,
+				2C08A7F21D000AC50029C94C /* OAuthViewController.swift in Sources */,
 				2C08A7EB1D000A230029C94C /* MainViewController.swift in Sources */,
+				2C08A7F61D0021640029C94C /* UserAccount.swift in Sources */,
 				2C08A7E71D000A230029C94C /* QRCodeCardViewController.swift in Sources */,
 				2C08A7ED1D000A230029C94C /* NullViewController.swift in Sources */,
 				2C08A7F01D000A230029C94C /* ProfileTableViewController.swift in Sources */,
@@ -490,6 +501,7 @@
 				2C08A7E01D000A230029C94C /* UIBarButtonItem+Category.swift in Sources */,
 				2C08A7E31D000A230029C94C /* PopoverAnimator.swift in Sources */,
 				2C08A7E21D000A230029C94C /* HomeTableViewController.swift in Sources */,
+				2C08A7F41D0013650029C94C /* NetworkTools.swift in Sources */,
 				2C08A7EE1D000A230029C94C /* VisitorView.swift in Sources */,
 				2C08A7EA1D000A230029C94C /* BaseTableViewController.swift in Sources */,
 				2C08A7E41D000A230029C94C /* PopoverPresentationController.swift in Sources */,
