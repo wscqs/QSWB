@@ -6,6 +6,7 @@ target 'QSWB' do
 pod 'Alamofire'
 pod 'RealmSwift'
 pod 'ObjectMapper'
+pod 'SwiftyJSON'
 
 #AutoLayout
 pod 'SnapKit'

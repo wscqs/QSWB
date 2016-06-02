@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -53,7 +54,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="9at-Vy-JIs" firstAttribute="leading" secondItem="Pvc-sY-P5o" secondAttribute="leading" id="6XP-3p-V89"/>
                                     <constraint firstAttribute="bottom" secondItem="9at-Vy-JIs" secondAttribute="bottom" id="7RL-Tg-5L5"/>
@@ -67,13 +68,33 @@
                                     <constraint firstAttribute="height" constant="300" id="zvK-Tr-sBJ"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扫描结果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLa-zE-8f3">
+                                <rect key="frame" x="266" y="495" width="68" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.041379310344827586" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fb-CZ-IJn">
+                                <rect key="frame" x="12" y="513" width="60" height="30"/>
+                                <state key="normal" title="我的名片" backgroundImage="qrcode_button_background">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="myCardBtnClick:" destination="tZy-iZ-pc1" eventType="touchUpInside" id="GEH-JV-cPw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JLa-zE-8f3" firstAttribute="centerX" secondItem="Pvc-sY-P5o" secondAttribute="centerX" id="3kL-TH-ULw"/>
                             <constraint firstItem="Pvc-sY-P5o" firstAttribute="centerY" secondItem="9BR-w2-Mgw" secondAttribute="centerY" id="Dyx-21-K67"/>
                             <constraint firstItem="Wld-YE-l3b" firstAttribute="top" secondItem="BsA-pb-Q9T" secondAttribute="bottom" id="Fn4-h7-O24"/>
+                            <constraint firstItem="BsA-pb-Q9T" firstAttribute="top" secondItem="0Fb-CZ-IJn" secondAttribute="bottom" constant="8" id="PrL-0w-Vke"/>
                             <constraint firstItem="Pvc-sY-P5o" firstAttribute="centerX" secondItem="9BR-w2-Mgw" secondAttribute="centerX" id="YHc-ai-cNV"/>
+                            <constraint firstItem="JLa-zE-8f3" firstAttribute="top" secondItem="Pvc-sY-P5o" secondAttribute="bottom" constant="45" id="aR9-b5-Udy"/>
                             <constraint firstAttribute="trailing" secondItem="BsA-pb-Q9T" secondAttribute="trailing" id="jNo-wO-qpY"/>
+                            <constraint firstItem="0Fb-CZ-IJn" firstAttribute="leading" secondItem="9BR-w2-Mgw" secondAttribute="leadingMargin" constant="-8" id="odj-Tf-v8O"/>
                             <constraint firstItem="BsA-pb-Q9T" firstAttribute="leading" secondItem="9BR-w2-Mgw" secondAttribute="leading" id="x1f-GB-CNZ"/>
                         </constraints>
                     </view>
@@ -88,6 +109,7 @@
                     <connections>
                         <outlet property="containerHeightCons" destination="zvK-Tr-sBJ" id="sR3-Rh-BAi"/>
                         <outlet property="customTabBar" destination="BsA-pb-Q9T" id="Lp4-5a-4go"/>
+                        <outlet property="resultLabel" destination="JLa-zE-8f3" id="g2g-3t-he0"/>
                         <outlet property="scanLineCons" destination="tOt-f7-BAQ" id="Zvd-fd-xD6"/>
                         <outlet property="scanLineView" destination="07C-BJ-ZtA" id="VWk-or-JnI"/>
                     </connections>
@@ -99,6 +121,7 @@
     </scenes>
     <resources>
         <image name="qrcode_border" width="51" height="51"/>
+        <image name="qrcode_button_background" width="34" height="32"/>
         <image name="qrcode_scanline_qrcode" width="218" height="170"/>
         <image name="qrcode_tabbar_icon_barcode" width="40" height="40"/>
         <image name="qrcode_tabbar_icon_qrcode" width="40" height="40"/>

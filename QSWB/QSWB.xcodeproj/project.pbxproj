@@ -8,27 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		25B6310DEA1394E526361135 /* Pods_QSWB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1C2C031275F7C84403FB19 /* Pods_QSWB.framework */; };
-		2C08A7131CFD65C10029C94C /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7101CFD65C10029C94C /* PopoverPresentationController.swift */; };
-		2C08A7141CFD65C10029C94C /* PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C08A7111CFD65C10029C94C /* PopoverViewController.storyboard */; };
-		2C08A7151CFD65C10029C94C /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7121CFD65C10029C94C /* PopoverViewController.swift */; };
-		2C08A7171CFD65E50029C94C /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7161CFD65E50029C94C /* PopoverAnimator.swift */; };
-		2C08A71A1CFD75760029C94C /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7191CFD75760029C94C /* QRCodeViewController.swift */; };
-		2C08A71C1CFD758C0029C94C /* QRCodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C08A71B1CFD758C0029C94C /* QRCodeViewController.storyboard */; };
+		2C08A7DF1D000A230029C94C /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7C31D000A230029C94C /* TitleButton.swift */; };
+		2C08A7E01D000A230029C94C /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7C41D000A230029C94C /* UIBarButtonItem+Category.swift */; };
+		2C08A7E11D000A230029C94C /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7C61D000A230029C94C /* DiscoverTableViewController.swift */; };
+		2C08A7E21D000A230029C94C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7C81D000A230029C94C /* HomeTableViewController.swift */; };
+		2C08A7E31D000A230029C94C /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7CA1D000A230029C94C /* PopoverAnimator.swift */; };
+		2C08A7E41D000A230029C94C /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7CB1D000A230029C94C /* PopoverPresentationController.swift */; };
+		2C08A7E51D000A230029C94C /* PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C08A7CC1D000A230029C94C /* PopoverViewController.storyboard */; };
+		2C08A7E61D000A230029C94C /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7CD1D000A230029C94C /* PopoverViewController.swift */; };
+		2C08A7E71D000A230029C94C /* QRCodeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7CF1D000A230029C94C /* QRCodeCardViewController.swift */; };
+		2C08A7E81D000A230029C94C /* QRCodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C08A7D01D000A230029C94C /* QRCodeViewController.storyboard */; };
+		2C08A7E91D000A230029C94C /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7D11D000A230029C94C /* QRCodeViewController.swift */; };
+		2C08A7EA1D000A230029C94C /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7D31D000A230029C94C /* BaseTableViewController.swift */; };
+		2C08A7EB1D000A230029C94C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7D41D000A230029C94C /* MainViewController.swift */; };
+		2C08A7EC1D000A230029C94C /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C08A7D61D000A230029C94C /* MainVCSettings.json */; };
+		2C08A7ED1D000A230029C94C /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7D71D000A230029C94C /* NullViewController.swift */; };
+		2C08A7EE1D000A230029C94C /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7D81D000A230029C94C /* VisitorView.swift */; };
+		2C08A7EF1D000A230029C94C /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7DA1D000A230029C94C /* MessageTableViewController.swift */; };
+		2C08A7F01D000A230029C94C /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7DD1D000A230029C94C /* ProfileTableViewController.swift */; };
 		2C4AC8F81CF81A9000E8038B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AC8F71CF81A9000E8038B /* AppDelegate.swift */; };
 		2C4AC8FF1CF81A9000E8038B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4AC8FE1CF81A9000E8038B /* Assets.xcassets */; };
 		2C4AC90D1CF81A9000E8038B /* QSWBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AC90C1CF81A9000E8038B /* QSWBTests.swift */; };
 		2C4AC9181CF81A9000E8038B /* QSWBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AC9171CF81A9000E8038B /* QSWBUITests.swift */; };
-		47305FF61CFB165E008E26CB /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47305FF51CFB165E008E26CB /* UIBarButtonItem+Category.swift */; };
-		47305FF81CFB1EDE008E26CB /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47305FF71CFB1EDE008E26CB /* TitleButton.swift */; };
-		47D9B8681CF89C40002959DE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B8671CF89C40002959DE /* MainViewController.swift */; };
-		47D9B86A1CF89C7E002959DE /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B8691CF89C7E002959DE /* HomeTableViewController.swift */; };
-		47D9B86C1CF89C94002959DE /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B86B1CF89C94002959DE /* DiscoverTableViewController.swift */; };
-		47D9B8701CF89CA9002959DE /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B86F1CF89CA9002959DE /* MessageTableViewController.swift */; };
-		47D9B8721CF89CB2002959DE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B8711CF89CB2002959DE /* ProfileTableViewController.swift */; };
-		47D9B87C1CF9F291002959DE /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 47D9B87A1CF9F291002959DE /* MainVCSettings.json */; };
-		47D9B87D1CF9F291002959DE /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B87B1CF9F291002959DE /* NullViewController.swift */; };
-		47D9B87F1CFA8155002959DE /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B87E1CFA8155002959DE /* BaseTableViewController.swift */; };
-		47D9B8811CFA843F002959DE /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9B8801CFA843F002959DE /* VisitorView.swift */; };
 		47D9B8831CFA8548002959DE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 47D9B8821CFA8548002959DE /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -52,12 +53,24 @@
 /* Begin PBXFileReference section */
 		11CFF1FBA7888E0522F0CC4E /* Pods-QSWB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QSWB.release.xcconfig"; path = "Pods/Target Support Files/Pods-QSWB/Pods-QSWB.release.xcconfig"; sourceTree = "<group>"; };
 		14E527B98C9E16B2CA1C526F /* Pods-QSWB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QSWB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QSWB/Pods-QSWB.debug.xcconfig"; sourceTree = "<group>"; };
-		2C08A7101CFD65C10029C94C /* PopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPresentationController.swift; sourceTree = "<group>"; };
-		2C08A7111CFD65C10029C94C /* PopoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopoverViewController.storyboard; sourceTree = "<group>"; };
-		2C08A7121CFD65C10029C94C /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
-		2C08A7161CFD65E50029C94C /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
-		2C08A7191CFD75760029C94C /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
-		2C08A71B1CFD758C0029C94C /* QRCodeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCodeViewController.storyboard; sourceTree = "<group>"; };
+		2C08A7C31D000A230029C94C /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		2C08A7C41D000A230029C94C /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
+		2C08A7C61D000A230029C94C /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		2C08A7C81D000A230029C94C /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		2C08A7CA1D000A230029C94C /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
+		2C08A7CB1D000A230029C94C /* PopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPresentationController.swift; sourceTree = "<group>"; };
+		2C08A7CC1D000A230029C94C /* PopoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopoverViewController.storyboard; sourceTree = "<group>"; };
+		2C08A7CD1D000A230029C94C /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		2C08A7CF1D000A230029C94C /* QRCodeCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeCardViewController.swift; sourceTree = "<group>"; };
+		2C08A7D01D000A230029C94C /* QRCodeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCodeViewController.storyboard; sourceTree = "<group>"; };
+		2C08A7D11D000A230029C94C /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		2C08A7D31D000A230029C94C /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		2C08A7D41D000A230029C94C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2C08A7D61D000A230029C94C /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		2C08A7D71D000A230029C94C /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
+		2C08A7D81D000A230029C94C /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		2C08A7DA1D000A230029C94C /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		2C08A7DD1D000A230029C94C /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		2C4AC8F41CF81A9000E8038B /* QSWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QSWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4AC8F71CF81A9000E8038B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C4AC8FE1CF81A9000E8038B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,17 +81,6 @@
 		2C4AC9131CF81A9000E8038B /* QSWBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSWBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4AC9171CF81A9000E8038B /* QSWBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSWBUITests.swift; sourceTree = "<group>"; };
 		2C4AC9191CF81A9000E8038B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47305FF51CFB165E008E26CB /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
-		47305FF71CFB1EDE008E26CB /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
-		47D9B8671CF89C40002959DE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		47D9B8691CF89C7E002959DE /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		47D9B86B1CF89C94002959DE /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
-		47D9B86F1CF89CA9002959DE /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
-		47D9B8711CF89CB2002959DE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
-		47D9B87A1CF9F291002959DE /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
-		47D9B87B1CF9F291002959DE /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
-		47D9B87E1CFA8155002959DE /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
-		47D9B8801CFA843F002959DE /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		47D9B8821CFA8548002959DE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		8B1C2C031275F7C84403FB19 /* Pods_QSWB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QSWB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,24 +111,102 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C08A70F1CFD65C10029C94C /* Popover */ = {
+		2C08A7C21D000A230029C94C /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				2C08A7111CFD65C10029C94C /* PopoverViewController.storyboard */,
-				2C08A7121CFD65C10029C94C /* PopoverViewController.swift */,
-				2C08A7101CFD65C10029C94C /* PopoverPresentationController.swift */,
-				2C08A7161CFD65E50029C94C /* PopoverAnimator.swift */,
+				2C08A7C31D000A230029C94C /* TitleButton.swift */,
+				2C08A7C41D000A230029C94C /* UIBarButtonItem+Category.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2C08A7C51D000A230029C94C /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				2C08A7C61D000A230029C94C /* DiscoverTableViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		2C08A7C71D000A230029C94C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2C08A7C81D000A230029C94C /* HomeTableViewController.swift */,
+				2C08A7C91D000A230029C94C /* Popover */,
+				2C08A7CE1D000A230029C94C /* QRCode */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2C08A7C91D000A230029C94C /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				2C08A7CA1D000A230029C94C /* PopoverAnimator.swift */,
+				2C08A7CB1D000A230029C94C /* PopoverPresentationController.swift */,
+				2C08A7CC1D000A230029C94C /* PopoverViewController.storyboard */,
+				2C08A7CD1D000A230029C94C /* PopoverViewController.swift */,
 			);
 			path = Popover;
 			sourceTree = "<group>";
 		};
-		2C08A7181CFD753E0029C94C /* QRCode */ = {
+		2C08A7CE1D000A230029C94C /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
-				2C08A7191CFD75760029C94C /* QRCodeViewController.swift */,
-				2C08A71B1CFD758C0029C94C /* QRCodeViewController.storyboard */,
+				2C08A7CF1D000A230029C94C /* QRCodeCardViewController.swift */,
+				2C08A7D01D000A230029C94C /* QRCodeViewController.storyboard */,
+				2C08A7D11D000A230029C94C /* QRCodeViewController.swift */,
 			);
 			path = QRCode;
+			sourceTree = "<group>";
+		};
+		2C08A7D21D000A230029C94C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2C08A7D31D000A230029C94C /* BaseTableViewController.swift */,
+				2C08A7D41D000A230029C94C /* MainViewController.swift */,
+				2C08A7D51D000A230029C94C /* Resource */,
+				2C08A7D81D000A230029C94C /* VisitorView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2C08A7D51D000A230029C94C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2C08A7D61D000A230029C94C /* MainVCSettings.json */,
+				2C08A7D71D000A230029C94C /* NullViewController.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2C08A7D91D000A230029C94C /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				2C08A7DA1D000A230029C94C /* MessageTableViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		2C08A7DB1D000A230029C94C /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		2C08A7DC1D000A230029C94C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2C08A7DD1D000A230029C94C /* ProfileTableViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2C08A7DE1D000A230029C94C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		2C4AC8EB1CF81A9000E8038B = {
@@ -184,85 +264,16 @@
 		47D9B8601CF89C01002959DE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				47D9B8731CF89CD9002959DE /* Tools */,
-				47D9B8611CF89C01002959DE /* Common */,
-				47D9B8621CF89C01002959DE /* Discover */,
-				47D9B8631CF89C01002959DE /* Home */,
-				47D9B8641CF89C01002959DE /* Main */,
-				47D9B8651CF89C01002959DE /* Message */,
-				47D9B8661CF89C01002959DE /* Profile */,
+				2C08A7C21D000A230029C94C /* Common */,
+				2C08A7C51D000A230029C94C /* Discover */,
+				2C08A7C71D000A230029C94C /* Home */,
+				2C08A7D21D000A230029C94C /* Main */,
+				2C08A7D91D000A230029C94C /* Message */,
+				2C08A7DB1D000A230029C94C /* OAuth */,
+				2C08A7DC1D000A230029C94C /* Profile */,
+				2C08A7DE1D000A230029C94C /* Tools */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		47D9B8611CF89C01002959DE /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				47305FF51CFB165E008E26CB /* UIBarButtonItem+Category.swift */,
-				47305FF71CFB1EDE008E26CB /* TitleButton.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		47D9B8621CF89C01002959DE /* Discover */ = {
-			isa = PBXGroup;
-			children = (
-				47D9B86B1CF89C94002959DE /* DiscoverTableViewController.swift */,
-			);
-			path = Discover;
-			sourceTree = "<group>";
-		};
-		47D9B8631CF89C01002959DE /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				2C08A7181CFD753E0029C94C /* QRCode */,
-				2C08A70F1CFD65C10029C94C /* Popover */,
-				47D9B8691CF89C7E002959DE /* HomeTableViewController.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		47D9B8641CF89C01002959DE /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				47D9B8791CF9F291002959DE /* Resource */,
-				47D9B8671CF89C40002959DE /* MainViewController.swift */,
-				47D9B87E1CFA8155002959DE /* BaseTableViewController.swift */,
-				47D9B8801CFA843F002959DE /* VisitorView.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		47D9B8651CF89C01002959DE /* Message */ = {
-			isa = PBXGroup;
-			children = (
-				47D9B86F1CF89CA9002959DE /* MessageTableViewController.swift */,
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
-		47D9B8661CF89C01002959DE /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				47D9B8711CF89CB2002959DE /* ProfileTableViewController.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		47D9B8731CF89CD9002959DE /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		47D9B8791CF9F291002959DE /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				47D9B87A1CF9F291002959DE /* MainVCSettings.json */,
-				47D9B87B1CF9F291002959DE /* NullViewController.swift */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		786C4C02A372D9DF42331CE7 /* Frameworks */ = {
@@ -389,11 +400,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C08A7E51D000A230029C94C /* PopoverViewController.storyboard in Resources */,
+				2C08A7EC1D000A230029C94C /* MainVCSettings.json in Resources */,
 				47D9B8831CFA8548002959DE /* Podfile in Resources */,
-				47D9B87C1CF9F291002959DE /* MainVCSettings.json in Resources */,
-				2C08A7141CFD65C10029C94C /* PopoverViewController.storyboard in Resources */,
-				2C08A71C1CFD758C0029C94C /* QRCodeViewController.storyboard in Resources */,
 				2C4AC8FF1CF81A9000E8038B /* Assets.xcassets in Resources */,
+				2C08A7E81D000A230029C94C /* QRCodeViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,21 +477,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D9B87F1CFA8155002959DE /* BaseTableViewController.swift in Sources */,
-				47D9B86A1CF89C7E002959DE /* HomeTableViewController.swift in Sources */,
-				2C08A7151CFD65C10029C94C /* PopoverViewController.swift in Sources */,
-				47D9B8681CF89C40002959DE /* MainViewController.swift in Sources */,
-				47D9B86C1CF89C94002959DE /* DiscoverTableViewController.swift in Sources */,
-				47305FF81CFB1EDE008E26CB /* TitleButton.swift in Sources */,
-				2C08A7131CFD65C10029C94C /* PopoverPresentationController.swift in Sources */,
+				2C08A7E61D000A230029C94C /* PopoverViewController.swift in Sources */,
+				2C08A7DF1D000A230029C94C /* TitleButton.swift in Sources */,
 				2C4AC8F81CF81A9000E8038B /* AppDelegate.swift in Sources */,
-				2C08A7171CFD65E50029C94C /* PopoverAnimator.swift in Sources */,
-				2C08A71A1CFD75760029C94C /* QRCodeViewController.swift in Sources */,
-				47D9B87D1CF9F291002959DE /* NullViewController.swift in Sources */,
-				47D9B8811CFA843F002959DE /* VisitorView.swift in Sources */,
-				47D9B8721CF89CB2002959DE /* ProfileTableViewController.swift in Sources */,
-				47305FF61CFB165E008E26CB /* UIBarButtonItem+Category.swift in Sources */,
-				47D9B8701CF89CA9002959DE /* MessageTableViewController.swift in Sources */,
+				2C08A7EB1D000A230029C94C /* MainViewController.swift in Sources */,
+				2C08A7E71D000A230029C94C /* QRCodeCardViewController.swift in Sources */,
+				2C08A7ED1D000A230029C94C /* NullViewController.swift in Sources */,
+				2C08A7F01D000A230029C94C /* ProfileTableViewController.swift in Sources */,
+				2C08A7E91D000A230029C94C /* QRCodeViewController.swift in Sources */,
+				2C08A7EF1D000A230029C94C /* MessageTableViewController.swift in Sources */,
+				2C08A7E11D000A230029C94C /* DiscoverTableViewController.swift in Sources */,
+				2C08A7E01D000A230029C94C /* UIBarButtonItem+Category.swift in Sources */,
+				2C08A7E31D000A230029C94C /* PopoverAnimator.swift in Sources */,
+				2C08A7E21D000A230029C94C /* HomeTableViewController.swift in Sources */,
+				2C08A7EE1D000A230029C94C /* VisitorView.swift in Sources */,
+				2C08A7EA1D000A230029C94C /* BaseTableViewController.swift in Sources */,
+				2C08A7E41D000A230029C94C /* PopoverPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

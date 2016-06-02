@@ -10,7 +10,7 @@ import UIKit
 
 class BaseTableViewController: UITableViewController, VisitorViewDelegate {
 
-    var userLogin = true
+    var userLogin = false
     
     //定义属性保存visitorView
     var visitorView: VisitorView?
