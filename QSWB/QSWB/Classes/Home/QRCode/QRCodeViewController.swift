@@ -184,6 +184,7 @@ extension QRCodeViewController: AVCaptureMetadataOutputObjectsDelegate{
         let path = UIBezierPath()
         var point = CGPointZero
         var index: Int = 0
+
         CGPointMakeWithDictionaryRepresentation((codeObject.corners[index++] as! CFDictionaryRef), &point)
         path.moveToPoint(point)
         

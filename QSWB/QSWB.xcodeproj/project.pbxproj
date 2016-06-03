@@ -29,6 +29,7 @@
 		2C08A7F21D000AC50029C94C /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7F11D000AC50029C94C /* OAuthViewController.swift */; };
 		2C08A7F41D0013650029C94C /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7F31D0013650029C94C /* NetworkTools.swift */; };
 		2C08A7F61D0021640029C94C /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7F51D0021640029C94C /* UserAccount.swift */; };
+		2C08A7F81D0115CF0029C94C /* String+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A7F71D0115CF0029C94C /* String+Category.swift */; };
 		2C4AC8F81CF81A9000E8038B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AC8F71CF81A9000E8038B /* AppDelegate.swift */; };
 		2C4AC8FF1CF81A9000E8038B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4AC8FE1CF81A9000E8038B /* Assets.xcassets */; };
 		2C4AC90D1CF81A9000E8038B /* QSWBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AC90C1CF81A9000E8038B /* QSWBTests.swift */; };
@@ -77,6 +78,7 @@
 		2C08A7F11D000AC50029C94C /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
 		2C08A7F31D0013650029C94C /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		2C08A7F51D0021640029C94C /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		2C08A7F71D0115CF0029C94C /* String+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Category.swift"; sourceTree = "<group>"; };
 		2C4AC8F41CF81A9000E8038B /* QSWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QSWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4AC8F71CF81A9000E8038B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C4AC8FE1CF81A9000E8038B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,7 +89,7 @@
 		2C4AC9131CF81A9000E8038B /* QSWBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSWBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4AC9171CF81A9000E8038B /* QSWBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSWBUITests.swift; sourceTree = "<group>"; };
 		2C4AC9191CF81A9000E8038B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47D9B8821CFA8548002959DE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		47D9B8821CFA8548002959DE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8B1C2C031275F7C84403FB19 /* Pods_QSWB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QSWB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -214,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				2C08A7F31D0013650029C94C /* NetworkTools.swift */,
+				2C08A7F71D0115CF0029C94C /* String+Category.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				2C08A7E91D000A230029C94C /* QRCodeViewController.swift in Sources */,
 				2C08A7EF1D000A230029C94C /* MessageTableViewController.swift in Sources */,
 				2C08A7E11D000A230029C94C /* DiscoverTableViewController.swift in Sources */,
+				2C08A7F81D0115CF0029C94C /* String+Category.swift in Sources */,
 				2C08A7E01D000A230029C94C /* UIBarButtonItem+Category.swift in Sources */,
 				2C08A7E31D000A230029C94C /* PopoverAnimator.swift in Sources */,
 				2C08A7E21D000A230029C94C /* HomeTableViewController.swift in Sources */,

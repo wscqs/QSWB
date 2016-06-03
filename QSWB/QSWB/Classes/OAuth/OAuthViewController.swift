@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SVProgressHUD
 
 class OAuthViewController: UIViewController {
 
@@ -81,6 +82,14 @@ extension OAuthViewController: UIWebViewDelegate{
         
         return false
     }
+    
+    func webViewDidStartLoad(webView: UIWebView) {
+        SVProgressHUD.showInfoWithStatus("正在加载")
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView) {
+        SVProgressHUD.dismiss()
+    }
 
     
     private func loadAccessToken(code: String){
@@ -89,16 +98,17 @@ extension OAuthViewController: UIWebViewDelegate{
         let params = ["client_id":WB_App_Key, "client_secret":WB_App_Secret, "grant_type":"authorization_code", "code":code, "redirect_uri":WB_redirect_uri]
         
         Alamofire.request(.POST,"https://api.weibo.com/"+path , parameters: params, encoding: ParameterEncoding.URL, headers: nil).responseJSON { (response) in
-            print(response.request)  // original URL request
-            print(response.response) // URL response
-            print(response.data)     // server data
-            print(response.result)   // result of response serialization
+//            print(response.request)  // original URL request
+//            print(response.response) // URL response
+//            print(response.data)     // server data
+//            print(response.result)   // result of response serialization
             
             if let JSON = response.result.value {
                 print("JSON: \(JSON)")
                 let account = UserAccount(dict: JSON as! [String : AnyObject])
                 // 2.归档模型
                 account.saveAccount()
+                self.close()
                 print(account)
             }
         }
