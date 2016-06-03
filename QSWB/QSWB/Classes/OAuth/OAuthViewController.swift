@@ -106,9 +106,16 @@ extension OAuthViewController: UIWebViewDelegate{
             if let JSON = response.result.value {
                 print("JSON: \(JSON)")
                 let account = UserAccount(dict: JSON as! [String : AnyObject])
-                // 2.归档模型
-                account.saveAccount()
-                self.close()
+                account.loadUserInfo({ (account, error) in
+                    if account != nil{
+                        account!.saveAccount()
+                    }
+                    self.close()
+                    SVProgressHUD.showInfoWithStatus("网络不给力")
+                })
+//                // 2.归档模型
+//                account.saveAccount()
+                
                 print(account)
             }
         }

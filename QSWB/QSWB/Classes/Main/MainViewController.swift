@@ -17,7 +17,6 @@ class MainViewController: UITabBarController {
         tabBar.tintColor = UIColor.orangeColor()
         
         addChildViewControllers()
-        print(UserAccount.loadAccount())
     
     }
     
