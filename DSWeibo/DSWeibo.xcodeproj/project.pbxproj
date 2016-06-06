@@ -13,6 +13,9 @@
 		2C1992751D054F9B009242C6 /* UILabel+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1992731D054F9B009242C6 /* UILabel+Category.swift */; };
 		2C1992761D054F9B009242C6 /* UIButton+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1992741D054F9B009242C6 /* UIButton+Category.swift */; };
 		2C1992781D0556D8009242C6 /* NSDate+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1992771D0556D8009242C6 /* NSDate+Category.swift */; };
+		2C19927A1D0569CD009242C6 /* StatusTableViewTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1992791D0569CD009242C6 /* StatusTableViewTopView.swift */; };
+		2C19927C1D0569E7009242C6 /* StatusTableViewBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19927B1D0569E7009242C6 /* StatusTableViewBottomView.swift */; };
+		2C19927E1D056A05009242C6 /* StatusPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19927D1D056A05009242C6 /* StatusPictureView.swift */; };
 		7080B3031B9D2D4A008ED58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3021B9D2D4A008ED58E /* AppDelegate.swift */; };
 		7080B30A1B9D2D4A008ED58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7080B3091B9D2D4A008ED58E /* Assets.xcassets */; };
 		7080B3181B9D2D4A008ED58E /* DSWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3171B9D2D4A008ED58E /* DSWeiboTests.swift */; };
@@ -83,6 +86,9 @@
 		2C1992731D054F9B009242C6 /* UILabel+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Category.swift"; sourceTree = "<group>"; };
 		2C1992741D054F9B009242C6 /* UIButton+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Category.swift"; sourceTree = "<group>"; };
 		2C1992771D0556D8009242C6 /* NSDate+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Category.swift"; sourceTree = "<group>"; };
+		2C1992791D0569CD009242C6 /* StatusTableViewTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewTopView.swift; sourceTree = "<group>"; };
+		2C19927B1D0569E7009242C6 /* StatusTableViewBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewBottomView.swift; sourceTree = "<group>"; };
+		2C19927D1D056A05009242C6 /* StatusPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusPictureView.swift; sourceTree = "<group>"; };
 		5ABE83B9C957B592399F2014 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7080B2FF1B9D2D4A008ED58E /* DSWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7080B3021B9D2D4A008ED58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -252,6 +258,9 @@
 				7080B35C1B9FDCC1008ED58E /* QRCode */,
 				7080B3531B9FBD16008ED58E /* Popover */,
 				7080B33A1B9D2F91008ED58E /* HomeTableViewController.swift */,
+				2C1992791D0569CD009242C6 /* StatusTableViewTopView.swift */,
+				2C19927B1D0569E7009242C6 /* StatusTableViewBottomView.swift */,
+				2C19927D1D056A05009242C6 /* StatusPictureView.swift */,
 				2C1992711D054EC5009242C6 /* StatusTableViewCell.swift */,
 				2C19926B1D05257E009242C6 /* Status.swift */,
 				2C19926D1D052DFD009242C6 /* User.swift */,
@@ -545,10 +554,12 @@
 				7080B4071BA12208008ED58E /* UserAccount.swift in Sources */,
 				7080B44A1BA1721E008ED58E /* WelcomeViewController.swift in Sources */,
 				7080B33B1B9D2F91008ED58E /* HomeTableViewController.swift in Sources */,
+				2C19927A1D0569CD009242C6 /* StatusTableViewTopView.swift in Sources */,
 				7080B4051BA11BF0008ED58E /* NetworkTools.swift in Sources */,
 				2C1992721D054EC5009242C6 /* StatusTableViewCell.swift in Sources */,
 				7080B3481B9D69DB008ED58E /* BaseTableViewController.swift in Sources */,
 				7080B3621BA01F61008ED58E /* QRCodeCardViewController.swift in Sources */,
+				2C19927E1D056A05009242C6 /* StatusPictureView.swift in Sources */,
 				7080B3391B9D2F77008ED58E /* MainViewController.swift in Sources */,
 				2C1992751D054F9B009242C6 /* UILabel+Category.swift in Sources */,
 				2C19926C1D05257E009242C6 /* Status.swift in Sources */,
@@ -557,6 +568,7 @@
 				7080B4031BA10F12008ED58E /* OAuthViewController.swift in Sources */,
 				7080B34C1B9D6E3F008ED58E /* UIView+AutoLayout.swift in Sources */,
 				7080B4481BA16650008ED58E /* NewfeatureCollectionViewController.swift in Sources */,
+				2C19927C1D0569E7009242C6 /* StatusTableViewBottomView.swift in Sources */,
 				7080B33F1B9D2FAE008ED58E /* MessageTableViewController.swift in Sources */,
 				2C1992761D054F9B009242C6 /* UIButton+Category.swift in Sources */,
 				2C1992781D0556D8009242C6 /* NSDate+Category.swift in Sources */,
