@@ -12,9 +12,9 @@ import SVProgressHUD
 
 class OAuthViewController: UIViewController {
 
-    let WB_App_Key = "2624860832"
-    let WB_App_Secret = "75430fcbef20686409d7b775b1f10f5e"
-    let WB_redirect_uri = "http://www.520it.com"
+    let WB_App_Key = "2058474898"
+    let WB_App_Secret = "a3ec3f8fa797fac21d702671a0cbfbf1"
+    let WB_redirect_uri = "https://wscqs.github.io/"
     
     override func loadView() {
         view = webView
@@ -113,6 +113,9 @@ extension OAuthViewController: UIWebViewDelegate
                 if account != nil
                 {
                     account!.saveAccount()
+                    // 去欢迎界面
+                    NSNotificationCenter.defaultCenter().postNotificationName(XMGSwitchRootViewControllerKey, object: false)
+                    return
                 }
                 
                 SVProgressHUD.showInfoWithStatus("网络不给力", maskType: SVProgressHUDMaskType.Black)

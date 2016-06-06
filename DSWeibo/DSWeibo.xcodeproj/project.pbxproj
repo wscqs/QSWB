@@ -7,36 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C19926C1D05257E009242C6 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19926B1D05257E009242C6 /* Status.swift */; };
 		7080B3031B9D2D4A008ED58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3021B9D2D4A008ED58E /* AppDelegate.swift */; };
 		7080B30A1B9D2D4A008ED58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7080B3091B9D2D4A008ED58E /* Assets.xcassets */; };
 		7080B3181B9D2D4A008ED58E /* DSWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3171B9D2D4A008ED58E /* DSWeiboTests.swift */; };
 		7080B3231B9D2D4A008ED58E /* DSWeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3221B9D2D4A008ED58E /* DSWeiboUITests.swift */; };
-		7080B3391B9D2F77008ED58E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3381B9D2F77008ED58E /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B33B1B9D2F91008ED58E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B33A1B9D2F91008ED58E /* HomeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B33D1B9D2FA5008ED58E /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B33C1B9D2FA5008ED58E /* DiscoverTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B33F1B9D2FAE008ED58E /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B33E1B9D2FAE008ED58E /* MessageTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B3411B9D2FB6008ED58E /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3401B9D2FB6008ED58E /* ProfileTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B3451B9D37DB008ED58E /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 7080B3431B9D37DB008ED58E /* MainVCSettings.json */; settings = {ASSET_TAGS = (); }; };
-		7080B3461B9D37DB008ED58E /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3441B9D37DB008ED58E /* NullViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B3481B9D69DB008ED58E /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3471B9D69DB008ED58E /* BaseTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B34A1B9D6B91008ED58E /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3491B9D6B91008ED58E /* VisitorView.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B34C1B9D6E3F008ED58E /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B34B1B9D6E3F008ED58E /* UIView+AutoLayout.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B34E1B9D7F5C008ED58E /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B34D1B9D7F5C008ED58E /* UIBarButtonItem+Category.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B3521B9D8367008ED58E /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3511B9D8367008ED58E /* TitleButton.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B3551B9FBD2E008ED58E /* PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7080B3541B9FBD2E008ED58E /* PopoverViewController.storyboard */; settings = {ASSET_TAGS = (); }; };
-		7080B3571B9FC017008ED58E /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3561B9FC017008ED58E /* PopoverPresentationController.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B3591B9FC0F6008ED58E /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3581B9FC0F6008ED58E /* PopoverViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B35B1B9FD20A008ED58E /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B35A1B9FD20A008ED58E /* PopoverAnimator.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B35E1B9FDCD4008ED58E /* QRCodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7080B35D1B9FDCD4008ED58E /* QRCodeViewController.storyboard */; settings = {ASSET_TAGS = (); }; };
-		7080B3601B9FDDA0008ED58E /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B35F1B9FDDA0008ED58E /* QRCodeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B3621BA01F61008ED58E /* QRCodeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3611BA01F61008ED58E /* QRCodeCardViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7080B3391B9D2F77008ED58E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3381B9D2F77008ED58E /* MainViewController.swift */; };
+		7080B33B1B9D2F91008ED58E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B33A1B9D2F91008ED58E /* HomeTableViewController.swift */; };
+		7080B33D1B9D2FA5008ED58E /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B33C1B9D2FA5008ED58E /* DiscoverTableViewController.swift */; };
+		7080B33F1B9D2FAE008ED58E /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B33E1B9D2FAE008ED58E /* MessageTableViewController.swift */; };
+		7080B3411B9D2FB6008ED58E /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3401B9D2FB6008ED58E /* ProfileTableViewController.swift */; };
+		7080B3451B9D37DB008ED58E /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 7080B3431B9D37DB008ED58E /* MainVCSettings.json */; };
+		7080B3461B9D37DB008ED58E /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3441B9D37DB008ED58E /* NullViewController.swift */; };
+		7080B3481B9D69DB008ED58E /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3471B9D69DB008ED58E /* BaseTableViewController.swift */; };
+		7080B34A1B9D6B91008ED58E /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3491B9D6B91008ED58E /* VisitorView.swift */; };
+		7080B34C1B9D6E3F008ED58E /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B34B1B9D6E3F008ED58E /* UIView+AutoLayout.swift */; };
+		7080B34E1B9D7F5C008ED58E /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B34D1B9D7F5C008ED58E /* UIBarButtonItem+Category.swift */; };
+		7080B3521B9D8367008ED58E /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3511B9D8367008ED58E /* TitleButton.swift */; };
+		7080B3551B9FBD2E008ED58E /* PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7080B3541B9FBD2E008ED58E /* PopoverViewController.storyboard */; };
+		7080B3571B9FC017008ED58E /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3561B9FC017008ED58E /* PopoverPresentationController.swift */; };
+		7080B3591B9FC0F6008ED58E /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3581B9FC0F6008ED58E /* PopoverViewController.swift */; };
+		7080B35B1B9FD20A008ED58E /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B35A1B9FD20A008ED58E /* PopoverAnimator.swift */; };
+		7080B35E1B9FDCD4008ED58E /* QRCodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7080B35D1B9FDCD4008ED58E /* QRCodeViewController.storyboard */; };
+		7080B3601B9FDDA0008ED58E /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B35F1B9FDDA0008ED58E /* QRCodeViewController.swift */; };
+		7080B3621BA01F61008ED58E /* QRCodeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3611BA01F61008ED58E /* QRCodeCardViewController.swift */; };
 		7080B4001BA02D86008ED58E /* Pods.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5ABE83B9C957B592399F2014 /* Pods.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7080B4031BA10F12008ED58E /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B4021BA10F12008ED58E /* OAuthViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B4051BA11BF0008ED58E /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B4041BA11BF0008ED58E /* NetworkTools.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B4071BA12208008ED58E /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B4061BA12208008ED58E /* UserAccount.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B4091BA12CCD008ED58E /* String+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B4081BA12CCD008ED58E /* String+Category.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B4481BA16650008ED58E /* NewfeatureCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B4471BA16650008ED58E /* NewfeatureCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7080B44A1BA1721E008ED58E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B4491BA1721E008ED58E /* WelcomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7080B4031BA10F12008ED58E /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B4021BA10F12008ED58E /* OAuthViewController.swift */; };
+		7080B4051BA11BF0008ED58E /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B4041BA11BF0008ED58E /* NetworkTools.swift */; };
+		7080B4071BA12208008ED58E /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B4061BA12208008ED58E /* UserAccount.swift */; };
+		7080B4091BA12CCD008ED58E /* String+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B4081BA12CCD008ED58E /* String+Category.swift */; };
+		7080B4481BA16650008ED58E /* NewfeatureCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B4471BA16650008ED58E /* NewfeatureCollectionViewController.swift */; };
+		7080B44A1BA1721E008ED58E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B4491BA1721E008ED58E /* WelcomeViewController.swift */; };
 		EE19D53521CF8D304BD7C3A6 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABE83B9C957B592399F2014 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C19926B1D05257E009242C6 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		5ABE83B9C957B592399F2014 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7080B2FF1B9D2D4A008ED58E /* DSWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7080B3021B9D2D4A008ED58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 				7080B35C1B9FDCC1008ED58E /* QRCode */,
 				7080B3531B9FBD16008ED58E /* Popover */,
 				7080B33A1B9D2F91008ED58E /* HomeTableViewController.swift */,
+				2C19926B1D05257E009242C6 /* Status.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				7080B3481B9D69DB008ED58E /* BaseTableViewController.swift in Sources */,
 				7080B3621BA01F61008ED58E /* QRCodeCardViewController.swift in Sources */,
 				7080B3391B9D2F77008ED58E /* MainViewController.swift in Sources */,
+				2C19926C1D05257E009242C6 /* Status.swift in Sources */,
 				7080B33D1B9D2FA5008ED58E /* DiscoverTableViewController.swift in Sources */,
 				7080B34E1B9D7F5C008ED58E /* UIBarButtonItem+Category.swift in Sources */,
 				7080B4031BA10F12008ED58E /* OAuthViewController.swift in Sources */,
