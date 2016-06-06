@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C19926C1D05257E009242C6 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19926B1D05257E009242C6 /* Status.swift */; };
+		2C19926E1D052DFD009242C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19926D1D052DFD009242C6 /* User.swift */; };
 		7080B3031B9D2D4A008ED58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3021B9D2D4A008ED58E /* AppDelegate.swift */; };
 		7080B30A1B9D2D4A008ED58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7080B3091B9D2D4A008ED58E /* Assets.xcassets */; };
 		7080B3181B9D2D4A008ED58E /* DSWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3171B9D2D4A008ED58E /* DSWeiboTests.swift */; };
@@ -73,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		2C19926B1D05257E009242C6 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		2C19926D1D052DFD009242C6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5ABE83B9C957B592399F2014 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7080B2FF1B9D2D4A008ED58E /* DSWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7080B3021B9D2D4A008ED58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				7080B3531B9FBD16008ED58E /* Popover */,
 				7080B33A1B9D2F91008ED58E /* HomeTableViewController.swift */,
 				2C19926B1D05257E009242C6 /* Status.swift */,
+				2C19926D1D052DFD009242C6 /* User.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				7080B3571B9FC017008ED58E /* PopoverPresentationController.swift in Sources */,
 				7080B3411B9D2FB6008ED58E /* ProfileTableViewController.swift in Sources */,
 				7080B3601B9FDDA0008ED58E /* QRCodeViewController.swift in Sources */,
+				2C19926E1D052DFD009242C6 /* User.swift in Sources */,
 				7080B3591B9FC0F6008ED58E /* PopoverViewController.swift in Sources */,
 				7080B4071BA12208008ED58E /* UserAccount.swift in Sources */,
 				7080B44A1BA1721E008ED58E /* WelcomeViewController.swift in Sources */,

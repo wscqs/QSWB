@@ -20,6 +20,9 @@ class Status: NSObject {
     /// 配图数组
     var pic_urls: [[String: AnyObject]]?
     
+    /// 用户信息
+    var user: User?
+    
     class func loadStatus(finished: (models: [Status]?, error: NSError?) -> ()){
         let path = "2/statuses/home_timeline.json"
         let params = ["access_token": UserAccount.loadAccount()!.access_token!]
@@ -29,7 +32,7 @@ class Status: NSObject {
             // 1.取出statuses key对应的数组 (存储的都是字典)
             // 2.遍历数组, 将字典转换为模型
             let models = dict2Model(JSON["statuses"] as! [[String: AnyObject]])
-            //            print(models)
+//                        print(models)
             // 2.通过闭包将数据传递给调用者
             finished(models: models, error: nil)
             
@@ -50,6 +53,14 @@ class Status: NSObject {
     init(dict: [String: AnyObject]) {
         super.init()
         setValuesForKeysWithDictionary(dict)
+    }
+    
+    override func setValue(value: AnyObject?, forKey key: String) {
+        if "user" == key{
+            user = User(dict: value as! [String : AnyObject])
+            return
+        }
+        super.setValue(value, forKey: key)
     }
     
     override func setValue(value: AnyObject?, forUndefinedKey key: String) {
