@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2C19926C1D05257E009242C6 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19926B1D05257E009242C6 /* Status.swift */; };
 		2C19926E1D052DFD009242C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19926D1D052DFD009242C6 /* User.swift */; };
+		2C1992721D054EC5009242C6 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1992711D054EC5009242C6 /* StatusTableViewCell.swift */; };
+		2C1992751D054F9B009242C6 /* UILabel+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1992731D054F9B009242C6 /* UILabel+Category.swift */; };
+		2C1992761D054F9B009242C6 /* UIButton+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1992741D054F9B009242C6 /* UIButton+Category.swift */; };
 		7080B3031B9D2D4A008ED58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3021B9D2D4A008ED58E /* AppDelegate.swift */; };
 		7080B30A1B9D2D4A008ED58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7080B3091B9D2D4A008ED58E /* Assets.xcassets */; };
 		7080B3181B9D2D4A008ED58E /* DSWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3171B9D2D4A008ED58E /* DSWeiboTests.swift */; };
@@ -75,6 +78,9 @@
 /* Begin PBXFileReference section */
 		2C19926B1D05257E009242C6 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		2C19926D1D052DFD009242C6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2C1992711D054EC5009242C6 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusTableViewCell.swift; path = Popover/StatusTableViewCell.swift; sourceTree = "<group>"; };
+		2C1992731D054F9B009242C6 /* UILabel+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Category.swift"; sourceTree = "<group>"; };
+		2C1992741D054F9B009242C6 /* UIButton+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Category.swift"; sourceTree = "<group>"; };
 		5ABE83B9C957B592399F2014 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7080B2FF1B9D2D4A008ED58E /* DSWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7080B3021B9D2D4A008ED58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -224,6 +230,8 @@
 			children = (
 				7080B34D1B9D7F5C008ED58E /* UIBarButtonItem+Category.swift */,
 				7080B3511B9D8367008ED58E /* TitleButton.swift */,
+				2C1992731D054F9B009242C6 /* UILabel+Category.swift */,
+				2C1992741D054F9B009242C6 /* UIButton+Category.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -242,6 +250,7 @@
 				7080B35C1B9FDCC1008ED58E /* QRCode */,
 				7080B3531B9FBD16008ED58E /* Popover */,
 				7080B33A1B9D2F91008ED58E /* HomeTableViewController.swift */,
+				2C1992711D054EC5009242C6 /* StatusTableViewCell.swift */,
 				2C19926B1D05257E009242C6 /* Status.swift */,
 				2C19926D1D052DFD009242C6 /* User.swift */,
 			);
@@ -534,9 +543,11 @@
 				7080B44A1BA1721E008ED58E /* WelcomeViewController.swift in Sources */,
 				7080B33B1B9D2F91008ED58E /* HomeTableViewController.swift in Sources */,
 				7080B4051BA11BF0008ED58E /* NetworkTools.swift in Sources */,
+				2C1992721D054EC5009242C6 /* StatusTableViewCell.swift in Sources */,
 				7080B3481B9D69DB008ED58E /* BaseTableViewController.swift in Sources */,
 				7080B3621BA01F61008ED58E /* QRCodeCardViewController.swift in Sources */,
 				7080B3391B9D2F77008ED58E /* MainViewController.swift in Sources */,
+				2C1992751D054F9B009242C6 /* UILabel+Category.swift in Sources */,
 				2C19926C1D05257E009242C6 /* Status.swift in Sources */,
 				7080B33D1B9D2FA5008ED58E /* DiscoverTableViewController.swift in Sources */,
 				7080B34E1B9D7F5C008ED58E /* UIBarButtonItem+Category.swift in Sources */,
@@ -544,6 +555,7 @@
 				7080B34C1B9D6E3F008ED58E /* UIView+AutoLayout.swift in Sources */,
 				7080B4481BA16650008ED58E /* NewfeatureCollectionViewController.swift in Sources */,
 				7080B33F1B9D2FAE008ED58E /* MessageTableViewController.swift in Sources */,
+				2C1992761D054F9B009242C6 /* UIButton+Category.swift in Sources */,
 				7080B35B1B9FD20A008ED58E /* PopoverAnimator.swift in Sources */,
 				7080B34A1B9D6B91008ED58E /* VisitorView.swift in Sources */,
 				7080B3031B9D2D4A008ED58E /* AppDelegate.swift in Sources */,
@@ -677,7 +689,7 @@
 				INFOPLIST_FILE = DSWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.520it.DSWeibo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DSWeibo/Weibo-Bridge.h";
@@ -695,7 +707,7 @@
 				INFOPLIST_FILE = DSWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.520it.DSWeibo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DSWeibo/Weibo-Bridge.h";
