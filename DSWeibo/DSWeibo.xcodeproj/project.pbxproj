@@ -12,6 +12,7 @@
 		2C1992721D054EC5009242C6 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1992711D054EC5009242C6 /* StatusTableViewCell.swift */; };
 		2C1992751D054F9B009242C6 /* UILabel+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1992731D054F9B009242C6 /* UILabel+Category.swift */; };
 		2C1992761D054F9B009242C6 /* UIButton+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1992741D054F9B009242C6 /* UIButton+Category.swift */; };
+		2C1992781D0556D8009242C6 /* NSDate+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1992771D0556D8009242C6 /* NSDate+Category.swift */; };
 		7080B3031B9D2D4A008ED58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3021B9D2D4A008ED58E /* AppDelegate.swift */; };
 		7080B30A1B9D2D4A008ED58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7080B3091B9D2D4A008ED58E /* Assets.xcassets */; };
 		7080B3181B9D2D4A008ED58E /* DSWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3171B9D2D4A008ED58E /* DSWeiboTests.swift */; };
@@ -81,6 +82,7 @@
 		2C1992711D054EC5009242C6 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusTableViewCell.swift; path = Popover/StatusTableViewCell.swift; sourceTree = "<group>"; };
 		2C1992731D054F9B009242C6 /* UILabel+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Category.swift"; sourceTree = "<group>"; };
 		2C1992741D054F9B009242C6 /* UIButton+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Category.swift"; sourceTree = "<group>"; };
+		2C1992771D0556D8009242C6 /* NSDate+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Category.swift"; sourceTree = "<group>"; };
 		5ABE83B9C957B592399F2014 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7080B2FF1B9D2D4A008ED58E /* DSWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7080B3021B9D2D4A008ED58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				7080B34B1B9D6E3F008ED58E /* UIView+AutoLayout.swift */,
 				7080B4041BA11BF0008ED58E /* NetworkTools.swift */,
 				7080B4081BA12CCD008ED58E /* String+Category.swift */,
+				2C1992771D0556D8009242C6 /* NSDate+Category.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				7080B4481BA16650008ED58E /* NewfeatureCollectionViewController.swift in Sources */,
 				7080B33F1B9D2FAE008ED58E /* MessageTableViewController.swift in Sources */,
 				2C1992761D054F9B009242C6 /* UIButton+Category.swift in Sources */,
+				2C1992781D0556D8009242C6 /* NSDate+Category.swift in Sources */,
 				7080B35B1B9FD20A008ED58E /* PopoverAnimator.swift in Sources */,
 				7080B34A1B9D6B91008ED58E /* VisitorView.swift in Sources */,
 				7080B3031B9D2D4A008ED58E /* AppDelegate.swift in Sources */,

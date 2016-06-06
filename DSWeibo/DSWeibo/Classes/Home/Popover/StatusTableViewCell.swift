@@ -13,12 +13,24 @@ class StatusTableViewCell: UITableViewCell {
     var status: Status?
         {
         didSet{
-//            textLabel?.text = status?.text
             nameLabel.text = status?.user?.name
             
-            timeLabel.text = "刚刚"
-            sourceLabel.text = "来自: 小霸王学习机"
             contentLabel.text = status?.text
+            
+            // 设置用户头像
+            if let url = status?.user?.imageURL
+            {
+                iconView.sd_setImageWithURL(url)
+            }
+            // 设置认证图标
+            verifiedView.image = status?.user?.verifiedImage
+            // 设置会员图标
+            print("mbrankImage = \(status?.user?.mbrankImage)")
+            vipView.image = status?.user?.mbrankImage
+            // 设置来源
+            sourceLabel.text = status?.source
+            // 设置时间
+            timeLabel.text = status?.created_at
         }
     }
     
