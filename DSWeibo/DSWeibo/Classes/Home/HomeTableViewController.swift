@@ -39,8 +39,10 @@ class HomeTableViewController: BaseTableViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "change", name: XMGPopoverAnimatorWillShow, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "change", name: XMGPopoverAnimatorWilldismiss, object: nil)
         
-        // 注册一个cell
-        tableView.registerClass(StatusTableViewCell.self, forCellReuseIdentifier: XMGHomeReuseIdentifier)
+        // 注册两个cell
+        tableView.registerClass(StatusNormalTableViewCell.self, forCellReuseIdentifier: StatusTableViewCellIdentifier.NormalCell.rawValue)
+        tableView.registerClass(StatusForwardTableViewCell.self, forCellReuseIdentifier: StatusTableViewCellIdentifier.ForwardCell.rawValue)
+        
         tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         // 4.加载微博数据
         loadData()
@@ -142,10 +144,11 @@ extension HomeTableViewController
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        // 1.获取cell
-        let cell = tableView.dequeueReusableCellWithIdentifier(XMGHomeReuseIdentifier, forIndexPath: indexPath) as! StatusTableViewCell
-        // 2.设置数据
+        
         let status = statuses![indexPath.row]
+        // 1.获取cell
+        let cell = tableView.dequeueReusableCellWithIdentifier(StatusTableViewCellIdentifier.cellID(status), forIndexPath: indexPath) as! StatusTableViewCell
+        // 2.设置数据
         cell.status = status
         
         // 3.返回cell
@@ -161,19 +164,17 @@ extension HomeTableViewController
         // 2.判断缓存中有没有
         if let height = rowCache[status.id]
         {
-            print("从缓存中获取")
             return height
         }
         
         // 3.拿到cell
-        let cell = tableView.dequeueReusableCellWithIdentifier(XMGHomeReuseIdentifier) as! StatusTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(StatusTableViewCellIdentifier.cellID(status)) as! StatusTableViewCell
         
         // 4.拿到对应行的行高
         let rowHeight = cell.rowHeight(status)
         
         // 5.缓存行高
         rowCache[status.id] = rowHeight
-        print("重新计算")
         
         // 6.返回行高
         return rowHeight

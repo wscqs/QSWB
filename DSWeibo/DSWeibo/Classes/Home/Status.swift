@@ -68,13 +68,22 @@ class Status: NSObject {
     /// 用户信息
     var user: User?
     
+    /// 转发微博
+    var retweeted_status: Status?
+    
+    // 如果有转发, 原创就没有配图
+    /// 定义一个计算属性, 用于返回原创获取转发配图的URL数组
+    var pictureURLS:[NSURL]?
+    {
+        return retweeted_status != nil ? retweeted_status?.storedPicURLS : storedPicURLS
+    }
+    
     /// 加载微博数据
     class func loadStatuses(finished: (models:[Status]?, error:NSError?)->()){
         let path = "2/statuses/home_timeline.json"
         let params = ["access_token": UserAccount.loadAccount()!.access_token!]
         
         NetworkTools.shareNetworkTools().GET(path, parameters: params, success: { (_, JSON) -> Void in
-            
             // 1.取出statuses key对应的数组 (存储的都是字典)
             // 2.遍历数组, 将字典转换为模型
             let models = dict2Model(JSON["statuses"] as! [[String: AnyObject]])
@@ -106,12 +115,12 @@ class Status: NSObject {
             //            }
             // Swift2.0新语法, 如果条件为nil, 那么就会执行else后面的语句
             //            status.storedPicURLS = nil
-//            guard let urls = status.storedPicURLS else
-//            {
-//                continue
-//            }
+            guard let _ = status.pictureURLS else
+            {
+                continue
+            }
             
-            for url in status.storedPicURLS!
+            for url in status.pictureURLS!
             {
                 // 将当前的下载操作添加到组中
                 dispatch_group_enter(group)
@@ -157,6 +166,13 @@ class Status: NSObject {
         {
             // 2.根据user key对应的字典创建一个模型
             user = User(dict: value as! [String : AnyObject])
+            return
+        }
+        
+        // 2.判断是否是转发微博, 如果是就自己处理
+        if "retweeted_status" == key
+        {
+            retweeted_status = Status(dict: value as! [String : AnyObject])
             return
         }
         
