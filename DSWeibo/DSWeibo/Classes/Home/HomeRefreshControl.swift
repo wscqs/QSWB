@@ -53,12 +53,10 @@ class HomeRefreshControl: UIRefreshControl {
         }
         if frame.origin.y >= -50 && rotationArrowFlag
         {
-            print("翻转回来")
             rotationArrowFlag = false
             refreshView.rotaionArrowIcon(rotationArrowFlag)
         }else if frame.origin.y < -50 && !rotationArrowFlag
         {
-            print("翻转")
             rotationArrowFlag = true
             refreshView.rotaionArrowIcon(rotationArrowFlag)
         }

@@ -28,6 +28,7 @@ class StatusPictureView: UICollectionView {
         
         // 2.设置数据源
         dataSource = self
+        delegate = self
         
         // 2.设置cell之间的间隙
         pictureLayout.minimumInteritemSpacing = 10
@@ -124,7 +125,14 @@ class StatusPictureView: UICollectionView {
 }
 
 
-extension StatusPictureView: UICollectionViewDataSource
+/// 选中图片的通知名称
+let XMGStatusPictureViewSelected = "XMGStatusPictureViewSelected"
+/// 当前选中图片的索引对应的key
+let XMGStatusPictureViewIndexKey = "XMGStatusPictureViewIndexKey"
+/// 需要展示的所有图片对应的key
+let XMGStatusPictureViewURLsKey = "XMGStatusPictureViewURLsKey"
+
+extension StatusPictureView: UICollectionViewDataSource,UICollectionViewDelegate
 {
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return status?.storedPicURLS?.count ?? 0
@@ -141,4 +149,11 @@ extension StatusPictureView: UICollectionViewDataSource
         return cell
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        //        print(indexPath.item)
+//        print(status?.storedLargePicURLS![indexPath.item])
+        
+        let info = [XMGStatusPictureViewIndexKey : indexPath, XMGStatusPictureViewURLsKey : status!.storedLargePicURLS!]
+        NSNotificationCenter.defaultCenter().postNotificationName(XMGStatusPictureViewSelected, object: self, userInfo: info)
+    }
 }

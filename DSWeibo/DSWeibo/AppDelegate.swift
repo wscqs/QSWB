@@ -74,7 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //        var temp = nil ?? "123"
         //        print(temp)
         
-        print("current = \(currentVersion) sandbox = \(sandboxVersion)")
+//        print("current = \(currentVersion) sandbox = \(sandboxVersion)")
         
         // 3.比较当前版本号和以前版本号
         //   2.0                    1.0

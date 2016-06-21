@@ -39,6 +39,8 @@ class HomeTableViewController: BaseTableViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "change", name: XMGPopoverAnimatorWillShow, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "change", name: XMGPopoverAnimatorWilldismiss, object: nil)
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "showPhotoBrowser:", name: XMGStatusPictureViewSelected, object: nil)
+        
         // 注册两个cell
         tableView.registerClass(StatusNormalTableViewCell.self, forCellReuseIdentifier: StatusTableViewCellIdentifier.NormalCell.rawValue)
         tableView.registerClass(StatusForwardTableViewCell.self, forCellReuseIdentifier: StatusTableViewCellIdentifier.ForwardCell.rawValue)
@@ -53,6 +55,34 @@ class HomeTableViewController: BaseTableViewController {
         // 4.加载微博数据
         loadData()
     }
+    
+    /**
+     显示图片浏览器
+     */
+    func showPhotoBrowser(notify: NSNotification)
+    {
+        //        print(notify.userInfo)
+        // 注意: 如果通过通知传递数据, 一定要判断数据是否存在
+        guard let indexPath = notify.userInfo![XMGStatusPictureViewIndexKey] as? NSIndexPath else
+        {
+            print("没有indexPath")
+            return
+        }
+        
+        guard let urls = notify.userInfo![XMGStatusPictureViewURLsKey] as? [NSURL] else
+        {
+            print("没有配图")
+            return
+        }
+        
+        // 1.创建图片浏览器
+        let vc = PhotoBrowserController(index: indexPath.item, urls: urls)
+        
+        // 2.显示图片浏览器
+        presentViewController(vc, animated: true, completion: nil)
+    }
+
+    
     deinit
     {
         // 移除通知

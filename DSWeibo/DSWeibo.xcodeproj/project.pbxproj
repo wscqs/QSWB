@@ -18,6 +18,9 @@
 		2C19927E1D056A05009242C6 /* StatusPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19927D1D056A05009242C6 /* StatusPictureView.swift */; };
 		2C34C37E1D193E6C0093EA4A /* HomeRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C34C37D1D193E6C0093EA4A /* HomeRefreshControl.swift */; };
 		2C34C3801D193F250093EA4A /* HomeRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C34C37F1D193F250093EA4A /* HomeRefreshView.xib */; };
+		2C34C3831D194B190093EA4A /* PhotoBrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C34C3821D194B190093EA4A /* PhotoBrowserController.swift */; };
+		2C34C3851D194C5F0093EA4A /* PhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C34C3841D194C5F0093EA4A /* PhotoBrowserCell.swift */; };
+		2C34C3871D194FCD0093EA4A /* UIColor+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C34C3861D194FCD0093EA4A /* UIColor+Category.swift */; };
 		2CC495671D0808F200FC02A3 /* StatusNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC495661D0808F200FC02A3 /* StatusNormalTableViewCell.swift */; };
 		2CC495691D0809AA00FC02A3 /* StatusForwardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC495681D0809AA00FC02A3 /* StatusForwardTableViewCell.swift */; };
 		7080B3031B9D2D4A008ED58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3021B9D2D4A008ED58E /* AppDelegate.swift */; };
@@ -95,6 +98,9 @@
 		2C19927D1D056A05009242C6 /* StatusPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusPictureView.swift; sourceTree = "<group>"; };
 		2C34C37D1D193E6C0093EA4A /* HomeRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRefreshControl.swift; sourceTree = "<group>"; };
 		2C34C37F1D193F250093EA4A /* HomeRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeRefreshView.xib; sourceTree = "<group>"; };
+		2C34C3821D194B190093EA4A /* PhotoBrowserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserController.swift; sourceTree = "<group>"; };
+		2C34C3841D194C5F0093EA4A /* PhotoBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCell.swift; sourceTree = "<group>"; };
+		2C34C3861D194FCD0093EA4A /* UIColor+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Category.swift"; sourceTree = "<group>"; };
 		2CC495661D0808F200FC02A3 /* StatusNormalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusNormalTableViewCell.swift; sourceTree = "<group>"; };
 		2CC495681D0809AA00FC02A3 /* StatusForwardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusForwardTableViewCell.swift; sourceTree = "<group>"; };
 		5ABE83B9C957B592399F2014 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +177,15 @@
 				8E9284F60669CD6B71DBD6BC /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C34C3811D194B190093EA4A /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				2C34C3841D194C5F0093EA4A /* PhotoBrowserCell.swift */,
+				2C34C3821D194B190093EA4A /* PhotoBrowserController.swift */,
+			);
+			path = PhotoBrowser;
 			sourceTree = "<group>";
 		};
 		7080B2F61B9D2D4A008ED58E = {
@@ -263,6 +278,7 @@
 		7080B3331B9D2F00008ED58E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2C34C3811D194B190093EA4A /* PhotoBrowser */,
 				7080B35C1B9FDCC1008ED58E /* QRCode */,
 				7080B3531B9FBD16008ED58E /* Popover */,
 				7080B33A1B9D2F91008ED58E /* HomeTableViewController.swift */,
@@ -310,6 +326,7 @@
 		7080B3371B9D2F00008ED58E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2C34C3861D194FCD0093EA4A /* UIColor+Category.swift */,
 				7080B34B1B9D6E3F008ED58E /* UIView+AutoLayout.swift */,
 				7080B4041BA11BF0008ED58E /* NetworkTools.swift */,
 				7080B4081BA12CCD008ED58E /* String+Category.swift */,
@@ -566,6 +583,8 @@
 				7080B3591B9FC0F6008ED58E /* PopoverViewController.swift in Sources */,
 				7080B4071BA12208008ED58E /* UserAccount.swift in Sources */,
 				7080B44A1BA1721E008ED58E /* WelcomeViewController.swift in Sources */,
+				2C34C3871D194FCD0093EA4A /* UIColor+Category.swift in Sources */,
+				2C34C3851D194C5F0093EA4A /* PhotoBrowserCell.swift in Sources */,
 				7080B33B1B9D2F91008ED58E /* HomeTableViewController.swift in Sources */,
 				2C19927A1D0569CD009242C6 /* StatusTableViewTopView.swift in Sources */,
 				7080B4051BA11BF0008ED58E /* NetworkTools.swift in Sources */,
@@ -576,6 +595,7 @@
 				7080B3391B9D2F77008ED58E /* MainViewController.swift in Sources */,
 				2C1992751D054F9B009242C6 /* UILabel+Category.swift in Sources */,
 				2C19926C1D05257E009242C6 /* Status.swift in Sources */,
+				2C34C3831D194B190093EA4A /* PhotoBrowserController.swift in Sources */,
 				7080B33D1B9D2FA5008ED58E /* DiscoverTableViewController.swift in Sources */,
 				2C34C37E1D193E6C0093EA4A /* HomeRefreshControl.swift in Sources */,
 				7080B34E1B9D7F5C008ED58E /* UIBarButtonItem+Category.swift in Sources */,

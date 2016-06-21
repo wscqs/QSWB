@@ -69,9 +69,7 @@ class QRCodeViewController: UIViewController, UITabBarDelegate {
         }
         // 3.将输入和输出都添加到会话中
         session.addInput(deviceInput)
-        print(output.availableMetadataObjectTypes)
         session.addOutput(output)
-        print(output.availableMetadataObjectTypes)
         
         // 4.设置输出能够解析的数据类型
         // 注意: 设置能够解析的数据类型, 一定要在输出对象添加到会员之后设置, 否则会报错

@@ -42,7 +42,6 @@ extension NSDate
         {
             // 1.0获取当前时间和系统时间之间的差距(秒数)
             let since = Int(NSDate().timeIntervalSinceDate(self))
-            print("since = \(since)")
             // 1.1是否是刚刚
             if since < 60
             {

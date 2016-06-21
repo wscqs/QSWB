@@ -17,7 +17,6 @@ class UserAccount: NSObject , NSCoding{
         didSet{
             // 根据过期的秒数, 生成真正地过期时间
             expires_Date = NSDate(timeIntervalSinceNow: expires_in!.doubleValue)
-            print(expires_Date)
         }
     }
     
@@ -41,7 +40,6 @@ class UserAccount: NSObject , NSCoding{
         setValuesForKeysWithDictionary(dict)
     }
     override func setValue(value: AnyObject?, forUndefinedKey key: String) {
-        print(key)
     }
     
     /// 打印对象
@@ -62,7 +60,6 @@ class UserAccount: NSObject , NSCoding{
         let params = ["access_token":access_token!, "uid":uid!]
         
         NetworkTools.shareNetworkTools().GET(path, parameters: params, success: { (_, JSON) -> Void in
-            print(JSON)
             // 1.判断字典是否有值
             if let dict = JSON as? [String: AnyObject]
             {
