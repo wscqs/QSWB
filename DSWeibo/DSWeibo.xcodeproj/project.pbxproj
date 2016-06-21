@@ -16,6 +16,8 @@
 		2C19927A1D0569CD009242C6 /* StatusTableViewTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1992791D0569CD009242C6 /* StatusTableViewTopView.swift */; };
 		2C19927C1D0569E7009242C6 /* StatusTableViewBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19927B1D0569E7009242C6 /* StatusTableViewBottomView.swift */; };
 		2C19927E1D056A05009242C6 /* StatusPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19927D1D056A05009242C6 /* StatusPictureView.swift */; };
+		2C34C37E1D193E6C0093EA4A /* HomeRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C34C37D1D193E6C0093EA4A /* HomeRefreshControl.swift */; };
+		2C34C3801D193F250093EA4A /* HomeRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C34C37F1D193F250093EA4A /* HomeRefreshView.xib */; };
 		2CC495671D0808F200FC02A3 /* StatusNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC495661D0808F200FC02A3 /* StatusNormalTableViewCell.swift */; };
 		2CC495691D0809AA00FC02A3 /* StatusForwardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC495681D0809AA00FC02A3 /* StatusForwardTableViewCell.swift */; };
 		7080B3031B9D2D4A008ED58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B3021B9D2D4A008ED58E /* AppDelegate.swift */; };
@@ -91,6 +93,8 @@
 		2C1992791D0569CD009242C6 /* StatusTableViewTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewTopView.swift; sourceTree = "<group>"; };
 		2C19927B1D0569E7009242C6 /* StatusTableViewBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewBottomView.swift; sourceTree = "<group>"; };
 		2C19927D1D056A05009242C6 /* StatusPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusPictureView.swift; sourceTree = "<group>"; };
+		2C34C37D1D193E6C0093EA4A /* HomeRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRefreshControl.swift; sourceTree = "<group>"; };
+		2C34C37F1D193F250093EA4A /* HomeRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeRefreshView.xib; sourceTree = "<group>"; };
 		2CC495661D0808F200FC02A3 /* StatusNormalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusNormalTableViewCell.swift; sourceTree = "<group>"; };
 		2CC495681D0809AA00FC02A3 /* StatusForwardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusForwardTableViewCell.swift; sourceTree = "<group>"; };
 		5ABE83B9C957B592399F2014 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -262,6 +266,8 @@
 				7080B35C1B9FDCC1008ED58E /* QRCode */,
 				7080B3531B9FBD16008ED58E /* Popover */,
 				7080B33A1B9D2F91008ED58E /* HomeTableViewController.swift */,
+				2C34C37D1D193E6C0093EA4A /* HomeRefreshControl.swift */,
+				2C34C37F1D193F250093EA4A /* HomeRefreshView.xib */,
 				2C1992791D0569CD009242C6 /* StatusTableViewTopView.swift */,
 				2C19927B1D0569E7009242C6 /* StatusTableViewBottomView.swift */,
 				2C19927D1D056A05009242C6 /* StatusPictureView.swift */,
@@ -478,6 +484,7 @@
 			files = (
 				7080B3551B9FBD2E008ED58E /* PopoverViewController.storyboard in Resources */,
 				7080B3451B9D37DB008ED58E /* MainVCSettings.json in Resources */,
+				2C34C3801D193F250093EA4A /* HomeRefreshView.xib in Resources */,
 				7080B30A1B9D2D4A008ED58E /* Assets.xcassets in Resources */,
 				7080B35E1B9FDCD4008ED58E /* QRCodeViewController.storyboard in Resources */,
 			);
@@ -570,6 +577,7 @@
 				2C1992751D054F9B009242C6 /* UILabel+Category.swift in Sources */,
 				2C19926C1D05257E009242C6 /* Status.swift in Sources */,
 				7080B33D1B9D2FA5008ED58E /* DiscoverTableViewController.swift in Sources */,
+				2C34C37E1D193E6C0093EA4A /* HomeRefreshControl.swift in Sources */,
 				7080B34E1B9D7F5C008ED58E /* UIBarButtonItem+Category.swift in Sources */,
 				7080B4031BA10F12008ED58E /* OAuthViewController.swift in Sources */,
 				7080B34C1B9D6E3F008ED58E /* UIView+AutoLayout.swift in Sources */,

@@ -53,7 +53,6 @@ extension OAuthViewController: UIWebViewDelegate
     // 返回ture正常加载 , 返回false不加载
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool
     {
-        print(request.URL?.absoluteString)
         
         // 1.判断是否是授权回调页面, 如果不是就继续加载
         let urlStr = request.URL!.absoluteString

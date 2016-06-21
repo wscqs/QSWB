@@ -33,7 +33,6 @@ class MainViewController: UITabBarController {
     按钮点击事件的调用是由 运行循环 监听并且以消息机制传递的，因此，按钮监听函数不能设置为 private
     */
     func composeBtnClick(){
-        print(__FUNCTION__)
     }
     
     // MARK: - 内部控制方法
@@ -78,7 +77,6 @@ class MainViewController: UITabBarController {
             }catch
             {
                 // 发生异常之后会执行的代码
-                print(error)
                 
                 // 从本地创建控制器
                 addChildViewController("HomeTableViewController", title: "首页", imageName: "tabbar_home")

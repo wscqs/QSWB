@@ -42,8 +42,14 @@ class HomeTableViewController: BaseTableViewController {
         // 注册两个cell
         tableView.registerClass(StatusNormalTableViewCell.self, forCellReuseIdentifier: StatusTableViewCellIdentifier.NormalCell.rawValue)
         tableView.registerClass(StatusForwardTableViewCell.self, forCellReuseIdentifier: StatusTableViewCellIdentifier.ForwardCell.rawValue)
-        
         tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        
+        
+        // 4.添加下拉刷新控件
+        refreshControl = HomeRefreshControl()
+        refreshControl?.addTarget(self, action: "loadData", forControlEvents: UIControlEvents.ValueChanged)
+        
+        
         // 4.加载微博数据
         loadData()
     }
@@ -53,18 +59,102 @@ class HomeTableViewController: BaseTableViewController {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
+    /// 定义变量记录当前是上拉还是下拉
+    var pullupRefreshFlag = false
     /**
      获取微博数据
+     如果想调用一个私有的方法:
+     1.去掉private
+     2.@objc, 当做OC方法来处理
      */
-    private func loadData()
+    @objc private func loadData()
     {
-        Status.loadStatuses { (models, error) -> () in
+        /*
+         1.默认最新返回20条数据
+         2.since_id : 会返回比since_id大的微博
+         3.max_id: 会返回小于等于max_id的微博
+         
+         每条微博都有一个微博ID, 而且微博ID越后面发送的微博, 它的微博ID越大
+         递增
+         
+         新浪返回给我们的微博数据, 是从大到小的返回给我们的
+         
+         15
+         14
+         13
+         12
+         11
+         
+         10
+         9
+         8
+         7
+         6
+         5
+         
+         5
+         4
+         3
+         2
+         1
+         
+         
+         */
+        // 1.默认当做下拉处理
+        var since_id = statuses?.first?.id ?? 0
+        
+        var max_id = 0
+        // 2.判断是否是上拉
+        if pullupRefreshFlag
+        {
+            since_id = 0
+            max_id = statuses?.last?.id ?? 0
+        }
+        
+        Status.loadStatuses(since_id, max_id: max_id) { (models, error) -> () in
+            
+            // 接收刷新
+            self.refreshControl?.endRefreshing()
             
             if error != nil
             {
                 return
             }
-            self.statuses = models
+            // 下拉刷新
+            if since_id > 0
+            {
+                // 如果是下拉刷新, 就将获取到的数据, 拼接在原有数据的前面
+                self.statuses = models! + self.statuses!
+                
+                // 显示刷新提醒
+                self.showNewStatusCount(models?.count ?? 0)
+            }else if max_id > 0
+            {
+                // 如果是上拉加载更多, 就将获取到的数据, 拼接在原有数据的后面
+                self.statuses = self.statuses! + models!
+            }
+            else
+            {
+                self.statuses = models
+            }
+        }
+    }
+    /**
+     显示刷新提醒
+     */
+    private func showNewStatusCount(count : Int)
+    {
+        newStatusLabel.hidden = false
+        newStatusLabel.text = (count == 0) ? "没有刷新到新的微博数据" : "刷新到\(count)条微博数据"
+        UIView.animateWithDuration(2, animations: { () -> Void in
+            self.newStatusLabel.transform = CGAffineTransformMakeTranslation(0, self.newStatusLabel.frame.height)
+            
+        }) { (_) -> Void in
+            UIView.animateWithDuration(2, animations: { () -> Void in
+                self.newStatusLabel.transform = CGAffineTransformIdentity
+                }, completion: { (_) -> Void in
+                    self.newStatusLabel.hidden = true
+            })
         }
     }
     
@@ -128,6 +218,26 @@ class HomeTableViewController: BaseTableViewController {
         return pa
     }()
     
+    /// 刷新提醒控件
+    private lazy var newStatusLabel: UILabel =
+        {
+            let label = UILabel()
+            let height: CGFloat = 44
+            //        label.frame =  CGRect(x: 0, y: -2 * height, width: UIScreen.mainScreen().bounds.width, height: height)
+            label.frame =  CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: height)
+            
+            label.backgroundColor = UIColor.orangeColor()
+            label.textColor = UIColor.whiteColor()
+            label.textAlignment = NSTextAlignment.Center
+            
+            // 加载 navBar 上面，不会随着 tableView 一起滚动
+            self.navigationController?.navigationBar.insertSubview(label, atIndex: 0)
+            
+            label.hidden = true
+            return label
+    }()
+    
+    
     /// 微博行高的缓存, 利用字典作为容器. key就是微博的id, 值就是对应微博的行高
     var rowCache: [Int: CGFloat] = [Int: CGFloat]()
     
@@ -150,6 +260,16 @@ extension HomeTableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier(StatusTableViewCellIdentifier.cellID(status), forIndexPath: indexPath) as! StatusTableViewCell
         // 2.设置数据
         cell.status = status
+        
+        
+        // 4.判断是否滚动到了最后一个cell
+        let count = statuses?.count ?? 0
+        if indexPath.row == (count - 1)
+        {
+            pullupRefreshFlag = true
+            //            print("上拉加载更多")
+            loadData()
+        }
         
         // 3.返回cell
         return cell

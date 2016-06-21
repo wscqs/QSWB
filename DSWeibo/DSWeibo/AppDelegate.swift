@@ -19,8 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        print(UserAccount.loadAccount())
-        
         // 注册一个通知
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "switchRootViewController:", name: XMGSwitchRootViewControllerKey, object: nil)
         
@@ -36,9 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = defaultController()
         window?.makeKeyAndVisible()
         
-        
-        print(isNewupdate())
-        return true
+                return true
     }
     
     deinit{

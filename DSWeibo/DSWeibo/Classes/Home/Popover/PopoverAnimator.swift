@@ -85,7 +85,6 @@ class PopoverAnimator: NSObject , UIViewControllerTransitioningDelegate, UIViewC
         if isPresent
         {
             // 展开
-            print("展开")
             let toView = transitionContext.viewForKey(UITransitionContextToViewKey)!
             toView.transform = CGAffineTransformMakeScale(1.0, 0.0);
             
@@ -107,7 +106,6 @@ class PopoverAnimator: NSObject , UIViewControllerTransitioningDelegate, UIViewC
         }else
         {
             // 关闭
-            print("关闭")
             let fromView = transitionContext.viewForKey(UITransitionContextFromViewKey)
             
             UIView.animateWithDuration(transitionDuration(transitionContext), animations: { () -> Void in

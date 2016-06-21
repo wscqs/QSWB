@@ -58,7 +58,6 @@ class NewfeatureCollectionViewController: UICollectionViewController {
         
         // 1.拿到当前显示的cell对应的索引
         let path = collectionView.indexPathsForVisibleItems().last!
-        print(path)
         if path.item == (pageCount - 1)
         {
             // 2.拿到当前索引对应的cell

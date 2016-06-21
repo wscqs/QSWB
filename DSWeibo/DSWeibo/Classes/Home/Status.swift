@@ -79,9 +79,21 @@ class Status: NSObject {
     }
     
     /// 加载微博数据
-    class func loadStatuses(finished: (models:[Status]?, error:NSError?)->()){
+    class func loadStatuses(since_id: Int, max_id: Int, finished: (models:[Status]?, error:NSError?)->()){
         let path = "2/statuses/home_timeline.json"
-        let params = ["access_token": UserAccount.loadAccount()!.access_token!]
+        var params = ["access_token": UserAccount.loadAccount()!.access_token!]
+        
+        // 下拉刷新
+        if since_id > 0
+        {
+            params["since_id"] = "\(since_id)"
+        }
+        
+        // 上拉刷新
+        if max_id > 0
+        {
+            params["max_id"] = "\(max_id - 1)"
+        }
         
         NetworkTools.shareNetworkTools().GET(path, parameters: params, success: { (_, JSON) -> Void in
             // 1.取出statuses key对应的数组 (存储的都是字典)
@@ -90,9 +102,6 @@ class Status: NSObject {
             
             // 3.缓存微博配图
             cacheStatusImages(models, finished: finished)
-            
-            // 2.通过闭包将数据传递给调用者
-            //            finished(models: models, error: nil)
             
         }) { (_, error) -> Void in
             print(error)
@@ -103,6 +112,12 @@ class Status: NSObject {
     /// 缓存配图
     class func cacheStatusImages(list: [Status], finished: (models:[Status]?, error:NSError?)->()) {
         
+        if list.count == 0
+        {
+            finished(models: list, error: nil)
+            return
+        }
+        
         // 1.创建一个组
         let group = dispatch_group_create()
         
@@ -110,11 +125,7 @@ class Status: NSObject {
         for status in list
         {
             // 1.1判断当前微博是否有配图, 如果没有就直接跳过
-            //            if status.storedPicURLS == nil{
-            //                continue
-            //            }
             // Swift2.0新语法, 如果条件为nil, 那么就会执行else后面的语句
-            //            status.storedPicURLS = nil
             guard let _ = status.pictureURLS else
             {
                 continue
